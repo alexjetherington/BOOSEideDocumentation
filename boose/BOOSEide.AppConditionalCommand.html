@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AppConditionalCommand | BOOSEide </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AppConditionalCommand | BOOSEide ">
+      
+      <meta name="description" content="Represents metadata for conditional commands such as IF, WHILE, or FOR. Mirrors  using  and . Stores line numbers, condition evaluation, and type information. Execution of the block body is handled by .">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/new/main/apiSpec/new?filename=BOOSEide_AppConditionalCommand.md&amp;value=---%0Auid%3A%20BOOSEide.AppConditionalCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSEide">
+            BOOSEide
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEide.AppConditionalCommand">
+
+
+
+  <h1 id="BOOSEide_AppConditionalCommand" data-uid="BOOSEide.AppConditionalCommand" class="text-break">
+Class AppConditionalCommand  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="BOOSEide.html">BOOSEide</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>BOOSEide.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Represents metadata for conditional commands such as <code>IF</code>, <code>WHILE</code>, or <code>FOR</code>.
+Mirrors <span class="xref">BOOSE.ConditionalCommand</span> using <a class="xref" href="BOOSEide.AppBoolean.html">AppBoolean</a> and <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>.
+Stores line numbers, condition evaluation, and type information.
+Execution of the block body is handled by <a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a>.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class AppConditionalCommand : AppBoolean, IAppEvaluation, IAppCommand</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="BOOSEide.AppCommand.html">AppCommand</a></div>
+      <div><a class="xref" href="BOOSEide.AppEvaluation.html">AppEvaluation</a></div>
+      <div><a class="xref" href="BOOSEide.AppBoolean.html">AppBoolean</a></div>
+      <div><span class="xref">AppConditionalCommand</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="BOOSEide.IAppEvaluation.html">IAppEvaluation</a></div>
+      <div><a class="xref" href="BOOSEide.IAppCommand.html">IAppCommand</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_expression">AppEvaluation.expression</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_evaluatedExpression">AppEvaluation.evaluatedExpression</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_varName">AppEvaluation.varName</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_Value">AppEvaluation.Value</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_IntValue">AppEvaluation.IntValue</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_RealValue">AppEvaluation.RealValue</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_BoolValue">AppEvaluation.BoolValue</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_Expression">AppEvaluation.Expression</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_VarName">AppEvaluation.VarName</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_Local">AppEvaluation.Local</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_CheckParameters_System_String___">AppEvaluation.CheckParameters(string[])</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_ProcessExpression_System_String_">AppEvaluation.ProcessExpression(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_IsDouble">AppCommand.IsDouble</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_Program">AppCommand.Program</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_parameterList">AppCommand.parameterList</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_parameters">AppCommand.parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_paramsInt">AppCommand.paramsInt</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProgramInstance">AppCommand.ProgramInstance</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_Name">AppCommand.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_ParameterList">AppCommand.ParameterList</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_Parameters">AppCommand.Parameters</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_ParamsInt">AppCommand.ParamsInt</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_">AppCommand.Set(AppStoredProgram, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_">AppCommand.ProcessParameters(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString">AppCommand.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="BOOSEide_AppConditionalCommand_endLineNumber" data-uid="BOOSEide.AppConditionalCommand.endLineNumber">
+  endLineNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Line number of the end of this command block.
+Protected so compound commands can modify it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int endLineNumber</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="BOOSEide_AppConditionalCommand_CondType_" data-uid="BOOSEide.AppConditionalCommand.CondType*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_CondType" data-uid="BOOSEide.AppConditionalCommand.CondType">
+  CondType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the type of this conditional command.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AppConditionalCommand.ConditionalTypes CondType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="BOOSEide.AppConditionalCommand.html">AppConditionalCommand</a>.<a class="xref" href="BOOSEide.AppConditionalCommand.ConditionalTypes.html">ConditionalTypes</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BOOSEide_AppConditionalCommand_Condition_" data-uid="BOOSEide.AppConditionalCommand.Condition*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_Condition" data-uid="BOOSEide.AppConditionalCommand.Condition">
+  Condition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the evaluated result of the conditional expression.
+True if the condition passes; false otherwise.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Condition { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BOOSEide_AppConditionalCommand_EndLineNumber_" data-uid="BOOSEide.AppConditionalCommand.EndLineNumber*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_EndLineNumber" data-uid="BOOSEide.AppConditionalCommand.EndLineNumber">
+  EndLineNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the line number of the end of this conditional block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int EndLineNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BOOSEide_AppConditionalCommand_LineNumber_" data-uid="BOOSEide.AppConditionalCommand.LineNumber*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_LineNumber" data-uid="BOOSEide.AppConditionalCommand.LineNumber">
+  LineNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the line number of this command in the program.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int LineNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="BOOSEide_AppConditionalCommand_ReturnLineNumber_" data-uid="BOOSEide.AppConditionalCommand.ReturnLineNumber*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_ReturnLineNumber" data-uid="BOOSEide.AppConditionalCommand.ReturnLineNumber">
+  ReturnLineNumber
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the line number to return to after executing this block.
+Used for loops (<code>FOR</code>, <code>WHILE</code>).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int ReturnLineNumber { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="BOOSEide_AppConditionalCommand_Compile_" data-uid="BOOSEide.AppConditionalCommand.Compile*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_Compile" data-uid="BOOSEide.AppConditionalCommand.Compile">
+  Compile()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Compile-time processing of the conditional command.
+Stores the trimmed conditional expression, pushes this command onto the program stack,
+and records the line number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Compile()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="BOOSEide_AppConditionalCommand_Execute_" data-uid="BOOSEide.AppConditionalCommand.Execute*"></a>
+
+  <h3 id="BOOSEide_AppConditionalCommand_Execute" data-uid="BOOSEide.AppConditionalCommand.Execute">
+  Execute()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Run-time execution: evaluates the conditional expression using <a class="xref" href="BOOSEide.AppBoolean.html">AppBoolean</a> logic.
+Updates <a class="xref" href="BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_Condition">Condition</a> and, if false, sets the program counter to the end of the block.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Execute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington/blob/main/BOOSEide/AppConditionalCommand.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

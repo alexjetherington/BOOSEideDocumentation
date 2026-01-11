@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace BOOSEide | BOOSEide </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace BOOSEide | BOOSEide ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="BOOSEide">
+            BOOSEide
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="BOOSEide">
+
+  <h1 id="BOOSEide" data-uid="BOOSEide" class="text-break">Namespace BOOSEide</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppBoolean.html">AppBoolean</a></dt>
+      <dd><p>Represents a boolean variable evaluation command within a stored program.
+Mirrors the functionality of <span class="xref">BOOSE.Boolean</span> using
+<a class="xref" href="BOOSEide.AppEvaluation.html">AppEvaluation</a> and <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCanvas.html">AppCanvas</a></dt>
+      <dd><p>Application-specific canvas implementing <a class="xref" href="BOOSEide.IAppCanvas.html">IAppCanvas</a>.
+Provides drawing functionality for shapes, lines, and text using
+a bitmap-backed graphics surface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCanvasCommand.html">AppCanvasCommand</a></dt>
+      <dd><p>Represents a command that interacts with a canvas.
+Replaces the original <code>BOOSE.CanvasCommand</code> in the App* hierarchy.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCast.html">AppCast</a></dt>
+      <dd><p>Application-specific cast command.
+Casts a real (<a class="xref" href="BOOSEide.AppReal.html">AppReal</a>) value to an integer (<a class="xref" href="BOOSEide.AppInt.html">AppInt</a>) variable.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCircle.html">AppCircle</a></dt>
+      <dd><p>Represents a circle drawing command that draws a circle centred
+on the current pen position of the canvas.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCommand.html">AppCommand</a></dt>
+      <dd><p>Mirrors the functionality of <code>BOOSE.Command</code> but adapted for <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>
+and <a class="xref" href="BOOSEide.IAppCommand.html">IAppCommand</a>.
+Provides base functionality for all App* commands including parameter parsing, compilation, and execution.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCommandFactory.html">AppCommandFactory</a></dt>
+      <dd><p>Factory for creating application commands (App* classes).
+Returns instances of <a class="xref" href="BOOSEide.AppCommand.html">AppCommand</a>-derived classes
+such as AppMoveTo, <a class="xref" href="BOOSEide.AppDrawTo.html">AppDrawTo</a>, <a class="xref" href="BOOSEide.AppCircle.html">AppCircle</a>, etc.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCommandOneParameter.html">AppCommandOneParameter</a></dt>
+      <dd><p>Base class for application-specific commands that take a single parameter.
+Works with <a class="xref" href="BOOSEide.AppCanvasCommand.html">AppCanvasCommand</a>, <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>, and <a class="xref" href="BOOSEide.AppEvaluation.html">AppEvaluation</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCommandThreeParameter.html">AppCommandThreeParameter</a></dt>
+      <dd><p>Base class for commands that require exactly three parameters.
+Inherits from <a class="xref" href="BOOSEide.AppCommandTwoParameter.html">AppCommandTwoParameter</a> and provides
+evaluation and assignment for the third parameter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCommandTwoParameter.html">AppCommandTwoParameter</a></dt>
+      <dd><p>Base class for commands that require exactly two parameters.
+Inherits from <a class="xref" href="BOOSEide.AppCommandOneParameter.html">AppCommandOneParameter</a> and provides evaluation and assignment
+for the second parameter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a></dt>
+      <dd><p>Represents a compound command that contains a body, such as <code>IF</code>, <code>WHILE</code>, or <code>FOR</code> blocks.
+Mirrors the functionality of <span class="xref">BOOSE.CompoundCommand</span> using
+<a class="xref" href="BOOSEide.AppConditionalCommand.html">AppConditionalCommand</a> and <a class="xref" href="BOOSEide.AppBoolean.html">AppBoolean</a>.
+Handles compile-time metadata, including parameter checking and linkage to corresponding end commands,
+but does not execute the body itself.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppConditionalCommand.html">AppConditionalCommand</a></dt>
+      <dd><p>Represents metadata for conditional commands such as <code>IF</code>, <code>WHILE</code>, or <code>FOR</code>.
+Mirrors <span class="xref">BOOSE.ConditionalCommand</span> using <a class="xref" href="BOOSEide.AppBoolean.html">AppBoolean</a> and <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>.
+Stores line numbers, condition evaluation, and type information.
+Execution of the block body is handled by <a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppDrawTo.html">AppDrawTo</a></dt>
+      <dd><p>Draws a line from the current pen position to the specified (x, y) coordinates on the canvas.
+Inherits from <a class="xref" href="BOOSEide.AppCommandTwoParameter.html">AppCommandTwoParameter</a> and works with <a class="xref" href="BOOSEide.IAppCanvas.html">IAppCanvas</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppElse.html">AppElse</a></dt>
+      <dd><p>Represents the ELSE part of an IF statement.
+Works in conjunction with <a class="xref" href="BOOSEide.AppIf.html">AppIf</a> and <a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a>.
+Responsible for skipping either the IF or ELSE block at runtime depending on the IF condition.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppEnd.html">AppEnd</a></dt>
+      <dd><p>Represents the &quot;END&quot; of a compound command such as <code>IF</code>, <code>WHILE</code>, <code>FOR</code>, or method blocks.
+Responsible for handling loop continuation for <a class="xref" href="BOOSEide.AppWhile.html">AppWhile</a> and <a class="xref" href="BOOSEide.AppFor.html">AppFor</a> commands,
+and marking the end of IF/ELSE blocks.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppEvaluation.html">AppEvaluation</a></dt>
+      <dd><p>Represents a variable evaluation command (int, real, boolean) within a stored program.
+Handles variable declarations, uninitialized variables, and assignments.
+Logic mirrors the base BOOSE Evaluation class to ensure correct nested if handling.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppFor.html">AppFor</a></dt>
+      <dd><p>Represents a FOR loop command in a stored program.
+Handles loop control variable declaration, evaluation of &quot;from&quot;, &quot;to&quot;, and &quot;step&quot; expressions,
+and provides methods for loop continuation and incrementing.
+Execution of the loop body is handled by <a class="xref" href="BOOSEide.AppEnd.html">AppEnd</a> and the BOOSE program engine.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppIf.html">AppIf</a></dt>
+      <dd><p>Represents an IF conditional command in the BOOSE language.
+Inherits from <a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a> to allow a block
+of commands to be conditionally executed.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppInt.html">AppInt</a></dt>
+      <dd><p>Application-specific integer evaluation class.
+Extends <a class="xref" href="BOOSEide.AppEvaluation.html">AppEvaluation</a> to support integer variables
+and integer expression evaluation.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppMoveto.html">AppMoveto</a></dt>
+      <dd><p>Command that moves the pen to a specified x,y on the canvas without drawing.
+Inherits from <a class="xref" href="BOOSEide.AppCommandTwoParameter.html">AppCommandTwoParameter</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppParser.html">AppParser</a></dt>
+      <dd><p>Parses BOOSE script lines into <a class="xref" href="BOOSEide.IAppCommand.html">IAppCommand</a> instances.
+Properly separates left-hand side (variable) and right-hand side (expression) to avoid evaluating '=' prematurely.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppPenColour.html">AppPenColour</a></dt>
+      <dd><p>Sets the pen color on the canvas using three integer RGB components.
+Inherits from AppCommandThreeParameter to leverage automatic parameter handling.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppReal.html">AppReal</a></dt>
+      <dd><p>Represents a real number (double) variable in BOOSEide.
+Inherits from <a class="xref" href="BOOSEide.AppEvaluation.html">AppEvaluation</a> and stores values as <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppRect.html">AppRect</a></dt>
+      <dd><p>Draws a rectangle on a canvas using two integer parameters: width and height.
+Inherits from AppCommandTwoParameter to enforce exactly two parameters.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a></dt>
+      <dd><p>Represents a stored BOOSE program containing AppCommand objects, variables, and method metadata.
+Supports execution, expression evaluation, and conditional block management.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppWhile.html">AppWhile</a></dt>
+      <dd><p>Represents a WHILE loop command in the BOOSE language.
+Inherits from <a class="xref" href="BOOSEide.AppCompoundCommand.html">AppCompoundCommand</a> to allow a block
+of commands to be repeatedly executed while a condition remains true.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppWrite.html">AppWrite</a></dt>
+      <dd><p>Custom write command that outputs text to the canvas instead of the console.
+Inherits from <a class="xref" href="BOOSEide.AppCommandOneParameter.html">AppCommandOneParameter</a> to accept a single parameter.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.GUI.html">GUI</a></dt>
+      <dd><p>Main GUI form for the BOOSE IDE application.
+Integrates the <a class="xref" href="BOOSEide.AppCanvas.html">AppCanvas</a>, <a class="xref" href="BOOSEide.IAppCommandFactory.html">IAppCommandFactory</a>,
+<a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>, and <a class="xref" href="BOOSEide.IAppParser.html">IAppParser</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.Program.html">Program</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.IAppCanvas.html">IAppCanvas</a></dt>
+      <dd><p>Application-specific canvas interface for use with <a class="xref" href="BOOSEide.AppCanvasCommand.html">AppCanvasCommand</a> commands.
+Mirrors a standard ICanvas but is fully compatible with the App* command classes.
+Provides drawing operations, shape creation, text output, and canvas state management.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.IAppCommand.html">IAppCommand</a></dt>
+      <dd><p>Represents a generic command in a BOOSE stored program.
+All App* commands implement this interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.IAppCommandFactory.html">IAppCommandFactory</a></dt>
+      <dd><p>Factory interface for creating application-specific commands.
+All App* commands should be created through a class implementing this interface.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.IAppEvaluation.html">IAppEvaluation</a></dt>
+      <dd><p>Represents a variable evaluation command within an <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>.
+Extends <a class="xref" href="BOOSEide.IAppCommand.html">IAppCommand</a> to provide variable-specific properties and expression handling.
+Used by AppInt, AppReal, AppBoolean, and other variable commands.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.IAppParser.html">IAppParser</a></dt>
+      <dd><p>Interface for a parser that converts BOOSE script lines or full programs
+into <a class="xref" href="BOOSEide.IAppCommand.html">IAppCommand</a> instances compatible with <a class="xref" href="BOOSEide.AppStoredProgram.html">AppStoredProgram</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.IAppStoredProgram.html">IAppStoredProgram</a></dt>
+      <dd><p>Interface representing a stored program that manages commands, variables,
+and program execution using App* classes.</p>
+</dd>
+    </dl>
+    <h3 id="enums">
+Enums
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="BOOSEide.AppConditionalCommand.ConditionalTypes.html">AppConditionalCommand.ConditionalTypes</a></dt>
+      <dd><p>Supported types of conditional commands.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
