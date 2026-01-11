@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.IAppCommand
+  commentId: T:BOOSEide.IAppCommand
+  id: IAppCommand
+  parent: BOOSEide
+  children:
+  - BOOSEide.IAppCommand.CheckParameters(System.String[])
+  - BOOSEide.IAppCommand.Compile
+  - BOOSEide.IAppCommand.Execute
+  - BOOSEide.IAppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAppCommand
+  nameWithType: IAppCommand
+  fullName: BOOSEide.IAppCommand
+  type: Interface
+  source:
+    remote:
+      path: BOOSEide/IAppCommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: IAppCommand
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommand.cs
+    startLine: 9
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Represents a generic command in a BOOSE stored program.
+
+    All App* commands implement this interface.
+  example: []
+  syntax:
+    content: public interface IAppCommand
+    content.vb: Public Interface IAppCommand
+- uid: BOOSEide.IAppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  commentId: M:BOOSEide.IAppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  id: Set(BOOSEide.AppStoredProgram,System.String)
+  parent: BOOSEide.IAppCommand
+  langs:
+  - csharp
+  - vb
+  name: Set(AppStoredProgram, string)
+  nameWithType: IAppCommand.Set(AppStoredProgram, string)
+  fullName: BOOSEide.IAppCommand.Set(BOOSEide.AppStoredProgram, string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppCommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Set
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommand.cs
+    startLine: 17
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Associates this command with a stored program and sets its raw parameter string.
+
+    Called before compilation or execution.
+  example: []
+  syntax:
+    content: void Set(AppStoredProgram Program, string Params)
+    parameters:
+    - id: Program
+      type: BOOSEide.AppStoredProgram
+      description: The stored program that owns this command.
+    - id: Params
+      type: System.String
+      description: The raw parameter string for this command.
+    content.vb: Sub [Set](Program As AppStoredProgram, Params As String)
+  overload: BOOSEide.IAppCommand.Set*
+  nameWithType.vb: IAppCommand.Set(AppStoredProgram, String)
+  fullName.vb: BOOSEide.IAppCommand.Set(BOOSEide.AppStoredProgram, String)
+  name.vb: Set(AppStoredProgram, String)
+- uid: BOOSEide.IAppCommand.Compile
+  commentId: M:BOOSEide.IAppCommand.Compile
+  id: Compile
+  parent: BOOSEide.IAppCommand
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: IAppCommand.Compile()
+  fullName: BOOSEide.IAppCommand.Compile()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppCommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Compile
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommand.cs
+    startLine: 23
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Performs compile-time processing of the command.
+
+    This may include parsing parameters, resolving variables, or registering methods.
+  example: []
+  syntax:
+    content: void Compile()
+    content.vb: Sub Compile()
+  overload: BOOSEide.IAppCommand.Compile*
+- uid: BOOSEide.IAppCommand.Execute
+  commentId: M:BOOSEide.IAppCommand.Execute
+  id: Execute
+  parent: BOOSEide.IAppCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: IAppCommand.Execute()
+  fullName: BOOSEide.IAppCommand.Execute()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppCommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Execute
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommand.cs
+    startLine: 29
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Executes the command at runtime.
+
+    Called by the program execution engine.
+  example: []
+  syntax:
+    content: void Execute()
+    content.vb: Sub Execute()
+  overload: BOOSEide.IAppCommand.Execute*
+- uid: BOOSEide.IAppCommand.CheckParameters(System.String[])
+  commentId: M:BOOSEide.IAppCommand.CheckParameters(System.String[])
+  id: CheckParameters(System.String[])
+  parent: BOOSEide.IAppCommand
+  langs:
+  - csharp
+  - vb
+  name: CheckParameters(string[])
+  nameWithType: IAppCommand.CheckParameters(string[])
+  fullName: BOOSEide.IAppCommand.CheckParameters(string[])
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppCommand.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: CheckParameters
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommand.cs
+    startLine: 36
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Checks that the command parameters are valid.
+
+    Throws an exception if parameters are invalid or missing.
+  example: []
+  syntax:
+    content: void CheckParameters(string[] Parameters)
+    parameters:
+    - id: Parameters
+      type: System.String[]
+      description: Array of individual parameters for the command.
+    content.vb: Sub CheckParameters(Parameters As String())
+  overload: BOOSEide.IAppCommand.CheckParameters*
+  nameWithType.vb: IAppCommand.CheckParameters(String())
+  fullName.vb: BOOSEide.IAppCommand.CheckParameters(String())
+  name.vb: CheckParameters(String())
+references:
+- uid: BOOSEide
+  commentId: N:BOOSEide
+  href: BOOSEide.html
+  name: BOOSEide
+  nameWithType: BOOSEide
+  fullName: BOOSEide
+- uid: BOOSEide.IAppCommand.Set*
+  commentId: Overload:BOOSEide.IAppCommand.Set
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  name: Set
+  nameWithType: IAppCommand.Set
+  fullName: BOOSEide.IAppCommand.Set
+- uid: BOOSEide.AppStoredProgram
+  commentId: T:BOOSEide.AppStoredProgram
+  parent: BOOSEide
+  href: BOOSEide.AppStoredProgram.html
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram
+  fullName: BOOSEide.AppStoredProgram
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEide.IAppCommand.Compile*
+  commentId: Overload:BOOSEide.IAppCommand.Compile
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Compile
+  name: Compile
+  nameWithType: IAppCommand.Compile
+  fullName: BOOSEide.IAppCommand.Compile
+- uid: BOOSEide.IAppCommand.Execute*
+  commentId: Overload:BOOSEide.IAppCommand.Execute
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  name: Execute
+  nameWithType: IAppCommand.Execute
+  fullName: BOOSEide.IAppCommand.Execute
+- uid: BOOSEide.IAppCommand.CheckParameters*
+  commentId: Overload:BOOSEide.IAppCommand.CheckParameters
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_CheckParameters_System_String___
+  name: CheckParameters
+  nameWithType: IAppCommand.CheckParameters
+  fullName: BOOSEide.IAppCommand.CheckParameters
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )

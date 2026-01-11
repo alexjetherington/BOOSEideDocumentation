@@ -1,0 +1,866 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.AppPenColour
+  commentId: T:BOOSEide.AppPenColour
+  id: AppPenColour
+  parent: BOOSEide
+  children:
+  - BOOSEide.AppPenColour.#ctor
+  - BOOSEide.AppPenColour.#ctor(BOOSEide.IAppCanvas,System.Int32,System.Int32,System.Int32)
+  - BOOSEide.AppPenColour.Execute
+  langs:
+  - csharp
+  - vb
+  name: AppPenColour
+  nameWithType: AppPenColour
+  fullName: BOOSEide.AppPenColour
+  type: Class
+  source:
+    remote:
+      path: BOOSEide/AppPenColour.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: AppPenColour
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppPenColour.cs
+    startLine: 9
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Sets the pen color on the canvas using three integer RGB components.
+
+    Inherits from AppCommandThreeParameter to leverage automatic parameter handling.
+  example: []
+  syntax:
+    content: 'public class AppPenColour : AppCommandThreeParameter, IAppCommand'
+    content.vb: Public Class AppPenColour Inherits AppCommandThreeParameter Implements IAppCommand
+  inheritance:
+  - System.Object
+  - BOOSEide.AppCommand
+  - BOOSEide.AppCanvasCommand
+  - BOOSEide.AppCommandOneParameter
+  - BOOSEide.AppCommandTwoParameter
+  - BOOSEide.AppCommandThreeParameter
+  implements:
+  - BOOSEide.IAppCommand
+  inheritedMembers:
+  - BOOSEide.AppCommandThreeParameter.Param3
+  - BOOSEide.AppCommandThreeParameter.CheckParameters(System.String[])
+  - BOOSEide.AppCommandTwoParameter.Param2
+  - BOOSEide.AppCommandTwoParameter.Param2Unprocessed
+  - BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(System.String)
+  - BOOSEide.AppCommandOneParameter.Param1
+  - BOOSEide.AppCommandOneParameter.Param1Unprocessed
+  - BOOSEide.AppCommandOneParameter.ProcessParameter(System.String)
+  - BOOSEide.AppCanvasCommand.xPos
+  - BOOSEide.AppCanvasCommand.yPos
+  - BOOSEide.AppCanvasCommand.Canvas
+  - BOOSEide.AppCanvasCommand.canvas
+  - BOOSEide.AppCommand.IsDouble
+  - BOOSEide.AppCommand.Program
+  - BOOSEide.AppCommand.parameterList
+  - BOOSEide.AppCommand.parameters
+  - BOOSEide.AppCommand.paramsInt
+  - BOOSEide.AppCommand.ProgramInstance
+  - BOOSEide.AppCommand.Name
+  - BOOSEide.AppCommand.ParameterList
+  - BOOSEide.AppCommand.Parameters
+  - BOOSEide.AppCommand.ParamsInt
+  - BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  - BOOSEide.AppCommand.Compile
+  - BOOSEide.AppCommand.ProcessParameters(System.String)
+  - BOOSEide.AppCommand.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: BOOSEide.AppPenColour.#ctor
+  commentId: M:BOOSEide.AppPenColour.#ctor
+  id: '#ctor'
+  parent: BOOSEide.AppPenColour
+  langs:
+  - csharp
+  - vb
+  name: AppPenColour()
+  nameWithType: AppPenColour.AppPenColour()
+  fullName: BOOSEide.AppPenColour.AppPenColour()
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEide/AppPenColour.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: .ctor
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppPenColour.cs
+    startLine: 14
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Default constructor for factory instantiation.
+  example: []
+  syntax:
+    content: public AppPenColour()
+    content.vb: Public Sub New()
+  overload: BOOSEide.AppPenColour.#ctor*
+  nameWithType.vb: AppPenColour.New()
+  fullName.vb: BOOSEide.AppPenColour.New()
+  name.vb: New()
+- uid: BOOSEide.AppPenColour.#ctor(BOOSEide.IAppCanvas,System.Int32,System.Int32,System.Int32)
+  commentId: M:BOOSEide.AppPenColour.#ctor(BOOSEide.IAppCanvas,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(BOOSEide.IAppCanvas,System.Int32,System.Int32,System.Int32)'
+  parent: BOOSEide.AppPenColour
+  langs:
+  - csharp
+  - vb
+  name: AppPenColour(IAppCanvas, int, int, int)
+  nameWithType: AppPenColour.AppPenColour(IAppCanvas, int, int, int)
+  fullName: BOOSEide.AppPenColour.AppPenColour(BOOSEide.IAppCanvas, int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEide/AppPenColour.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: .ctor
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppPenColour.cs
+    startLine: 26
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Constructor that initializes the command with a canvas and explicit RGB values.
+
+    Useful for programmatic creation instead of parsing text.
+  example: []
+  syntax:
+    content: public AppPenColour(IAppCanvas canvas, int red, int green, int blue)
+    parameters:
+    - id: canvas
+      type: BOOSEide.IAppCanvas
+      description: Canvas on which to apply the color.
+    - id: red
+      type: System.Int32
+      description: Red component (0–255).
+    - id: green
+      type: System.Int32
+      description: Green component (0–255).
+    - id: blue
+      type: System.Int32
+      description: Blue component (0–255).
+    content.vb: Public Sub New(canvas As IAppCanvas, red As Integer, green As Integer, blue As Integer)
+  overload: BOOSEide.AppPenColour.#ctor*
+  nameWithType.vb: AppPenColour.New(IAppCanvas, Integer, Integer, Integer)
+  fullName.vb: BOOSEide.AppPenColour.New(BOOSEide.IAppCanvas, Integer, Integer, Integer)
+  name.vb: New(IAppCanvas, Integer, Integer, Integer)
+- uid: BOOSEide.AppPenColour.Execute
+  commentId: M:BOOSEide.AppPenColour.Execute
+  id: Execute
+  parent: BOOSEide.AppPenColour
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AppPenColour.Execute()
+  fullName: BOOSEide.AppPenColour.Execute()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/AppPenColour.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Execute
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppPenColour.cs
+    startLine: 42
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Executes the command by applying the pen color to the canvas.
+  remarks: >-
+    - Calls base.Execute() to ensure parameters are evaluated (literals, variables, expressions).  
+
+    - Validates that RGB components are in the acceptable range (0–255).  
+
+    - Applies the color using the canvas API.
+  example: []
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: BOOSEide.AppCommandThreeParameter.Execute
+  overload: BOOSEide.AppPenColour.Execute*
+  implements:
+  - BOOSEide.IAppCommand.Execute
+references:
+- uid: BOOSEide
+  commentId: N:BOOSEide
+  href: BOOSEide.html
+  name: BOOSEide
+  nameWithType: BOOSEide
+  fullName: BOOSEide
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSEide.AppCommand
+  commentId: T:BOOSEide.AppCommand
+  parent: BOOSEide
+  href: BOOSEide.AppCommand.html
+  name: AppCommand
+  nameWithType: AppCommand
+  fullName: BOOSEide.AppCommand
+- uid: BOOSEide.AppCanvasCommand
+  commentId: T:BOOSEide.AppCanvasCommand
+  parent: BOOSEide
+  href: BOOSEide.AppCanvasCommand.html
+  name: AppCanvasCommand
+  nameWithType: AppCanvasCommand
+  fullName: BOOSEide.AppCanvasCommand
+- uid: BOOSEide.AppCommandOneParameter
+  commentId: T:BOOSEide.AppCommandOneParameter
+  parent: BOOSEide
+  href: BOOSEide.AppCommandOneParameter.html
+  name: AppCommandOneParameter
+  nameWithType: AppCommandOneParameter
+  fullName: BOOSEide.AppCommandOneParameter
+- uid: BOOSEide.AppCommandTwoParameter
+  commentId: T:BOOSEide.AppCommandTwoParameter
+  parent: BOOSEide
+  href: BOOSEide.AppCommandTwoParameter.html
+  name: AppCommandTwoParameter
+  nameWithType: AppCommandTwoParameter
+  fullName: BOOSEide.AppCommandTwoParameter
+- uid: BOOSEide.AppCommandThreeParameter
+  commentId: T:BOOSEide.AppCommandThreeParameter
+  parent: BOOSEide
+  href: BOOSEide.AppCommandThreeParameter.html
+  name: AppCommandThreeParameter
+  nameWithType: AppCommandThreeParameter
+  fullName: BOOSEide.AppCommandThreeParameter
+- uid: BOOSEide.IAppCommand
+  commentId: T:BOOSEide.IAppCommand
+  parent: BOOSEide
+  href: BOOSEide.IAppCommand.html
+  name: IAppCommand
+  nameWithType: IAppCommand
+  fullName: BOOSEide.IAppCommand
+- uid: BOOSEide.AppCommandThreeParameter.Param3
+  commentId: F:BOOSEide.AppCommandThreeParameter.Param3
+  parent: BOOSEide.AppCommandThreeParameter
+  href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_Param3
+  name: Param3
+  nameWithType: AppCommandThreeParameter.Param3
+  fullName: BOOSEide.AppCommandThreeParameter.Param3
+- uid: BOOSEide.AppCommandThreeParameter.CheckParameters(System.String[])
+  commentId: M:BOOSEide.AppCommandThreeParameter.CheckParameters(System.String[])
+  parent: BOOSEide.AppCommandThreeParameter
+  isExternal: true
+  href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: AppCommandThreeParameter.CheckParameters(string[])
+  fullName: BOOSEide.AppCommandThreeParameter.CheckParameters(string[])
+  nameWithType.vb: AppCommandThreeParameter.CheckParameters(String())
+  fullName.vb: BOOSEide.AppCommandThreeParameter.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: BOOSEide.AppCommandThreeParameter.CheckParameters(System.String[])
+    name: CheckParameters
+    href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommandThreeParameter.CheckParameters(System.String[])
+    name: CheckParameters
+    href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: BOOSEide.AppCommandTwoParameter.Param2
+  commentId: F:BOOSEide.AppCommandTwoParameter.Param2
+  parent: BOOSEide.AppCommandTwoParameter
+  href: BOOSEide.AppCommandTwoParameter.html#BOOSEide_AppCommandTwoParameter_Param2
+  name: Param2
+  nameWithType: AppCommandTwoParameter.Param2
+  fullName: BOOSEide.AppCommandTwoParameter.Param2
+- uid: BOOSEide.AppCommandTwoParameter.Param2Unprocessed
+  commentId: F:BOOSEide.AppCommandTwoParameter.Param2Unprocessed
+  parent: BOOSEide.AppCommandTwoParameter
+  href: BOOSEide.AppCommandTwoParameter.html#BOOSEide_AppCommandTwoParameter_Param2Unprocessed
+  name: Param2Unprocessed
+  nameWithType: AppCommandTwoParameter.Param2Unprocessed
+  fullName: BOOSEide.AppCommandTwoParameter.Param2Unprocessed
+- uid: BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(System.String)
+  commentId: M:BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(System.String)
+  parent: BOOSEide.AppCommandTwoParameter
+  isExternal: true
+  href: BOOSEide.AppCommandTwoParameter.html#BOOSEide_AppCommandTwoParameter_ProcessSecondParameter_System_String_
+  name: ProcessSecondParameter(string)
+  nameWithType: AppCommandTwoParameter.ProcessSecondParameter(string)
+  fullName: BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(string)
+  nameWithType.vb: AppCommandTwoParameter.ProcessSecondParameter(String)
+  fullName.vb: BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(String)
+  name.vb: ProcessSecondParameter(String)
+  spec.csharp:
+  - uid: BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(System.String)
+    name: ProcessSecondParameter
+    href: BOOSEide.AppCommandTwoParameter.html#BOOSEide_AppCommandTwoParameter_ProcessSecondParameter_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommandTwoParameter.ProcessSecondParameter(System.String)
+    name: ProcessSecondParameter
+    href: BOOSEide.AppCommandTwoParameter.html#BOOSEide_AppCommandTwoParameter_ProcessSecondParameter_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCommandOneParameter.Param1
+  commentId: F:BOOSEide.AppCommandOneParameter.Param1
+  parent: BOOSEide.AppCommandOneParameter
+  href: BOOSEide.AppCommandOneParameter.html#BOOSEide_AppCommandOneParameter_Param1
+  name: Param1
+  nameWithType: AppCommandOneParameter.Param1
+  fullName: BOOSEide.AppCommandOneParameter.Param1
+- uid: BOOSEide.AppCommandOneParameter.Param1Unprocessed
+  commentId: F:BOOSEide.AppCommandOneParameter.Param1Unprocessed
+  parent: BOOSEide.AppCommandOneParameter
+  href: BOOSEide.AppCommandOneParameter.html#BOOSEide_AppCommandOneParameter_Param1Unprocessed
+  name: Param1Unprocessed
+  nameWithType: AppCommandOneParameter.Param1Unprocessed
+  fullName: BOOSEide.AppCommandOneParameter.Param1Unprocessed
+- uid: BOOSEide.AppCommandOneParameter.ProcessParameter(System.String)
+  commentId: M:BOOSEide.AppCommandOneParameter.ProcessParameter(System.String)
+  parent: BOOSEide.AppCommandOneParameter
+  isExternal: true
+  href: BOOSEide.AppCommandOneParameter.html#BOOSEide_AppCommandOneParameter_ProcessParameter_System_String_
+  name: ProcessParameter(string)
+  nameWithType: AppCommandOneParameter.ProcessParameter(string)
+  fullName: BOOSEide.AppCommandOneParameter.ProcessParameter(string)
+  nameWithType.vb: AppCommandOneParameter.ProcessParameter(String)
+  fullName.vb: BOOSEide.AppCommandOneParameter.ProcessParameter(String)
+  name.vb: ProcessParameter(String)
+  spec.csharp:
+  - uid: BOOSEide.AppCommandOneParameter.ProcessParameter(System.String)
+    name: ProcessParameter
+    href: BOOSEide.AppCommandOneParameter.html#BOOSEide_AppCommandOneParameter_ProcessParameter_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommandOneParameter.ProcessParameter(System.String)
+    name: ProcessParameter
+    href: BOOSEide.AppCommandOneParameter.html#BOOSEide_AppCommandOneParameter_ProcessParameter_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCanvasCommand.xPos
+  commentId: F:BOOSEide.AppCanvasCommand.xPos
+  parent: BOOSEide.AppCanvasCommand
+  href: BOOSEide.AppCanvasCommand.html#BOOSEide_AppCanvasCommand_xPos
+  name: xPos
+  nameWithType: AppCanvasCommand.xPos
+  fullName: BOOSEide.AppCanvasCommand.xPos
+- uid: BOOSEide.AppCanvasCommand.yPos
+  commentId: F:BOOSEide.AppCanvasCommand.yPos
+  parent: BOOSEide.AppCanvasCommand
+  href: BOOSEide.AppCanvasCommand.html#BOOSEide_AppCanvasCommand_yPos
+  name: yPos
+  nameWithType: AppCanvasCommand.yPos
+  fullName: BOOSEide.AppCanvasCommand.yPos
+- uid: BOOSEide.AppCanvasCommand.Canvas
+  commentId: P:BOOSEide.AppCanvasCommand.Canvas
+  parent: BOOSEide.AppCanvasCommand
+  href: BOOSEide.AppCanvasCommand.html#BOOSEide_AppCanvasCommand_Canvas
+  name: Canvas
+  nameWithType: AppCanvasCommand.Canvas
+  fullName: BOOSEide.AppCanvasCommand.Canvas
+- uid: BOOSEide.AppCanvasCommand.canvas
+  commentId: F:BOOSEide.AppCanvasCommand.canvas
+  parent: BOOSEide.AppCanvasCommand
+  href: BOOSEide.AppCanvasCommand.html#BOOSEide_AppCanvasCommand_canvas
+  name: canvas
+  nameWithType: AppCanvasCommand.canvas
+  fullName: BOOSEide.AppCanvasCommand.canvas
+- uid: BOOSEide.AppCommand.IsDouble
+  commentId: F:BOOSEide.AppCommand.IsDouble
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_IsDouble
+  name: IsDouble
+  nameWithType: AppCommand.IsDouble
+  fullName: BOOSEide.AppCommand.IsDouble
+- uid: BOOSEide.AppCommand.Program
+  commentId: F:BOOSEide.AppCommand.Program
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Program
+  name: Program
+  nameWithType: AppCommand.Program
+  fullName: BOOSEide.AppCommand.Program
+- uid: BOOSEide.AppCommand.parameterList
+  commentId: F:BOOSEide.AppCommand.parameterList
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_parameterList
+  name: parameterList
+  nameWithType: AppCommand.parameterList
+  fullName: BOOSEide.AppCommand.parameterList
+- uid: BOOSEide.AppCommand.parameters
+  commentId: F:BOOSEide.AppCommand.parameters
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_parameters
+  name: parameters
+  nameWithType: AppCommand.parameters
+  fullName: BOOSEide.AppCommand.parameters
+- uid: BOOSEide.AppCommand.paramsInt
+  commentId: F:BOOSEide.AppCommand.paramsInt
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_paramsInt
+  name: paramsInt
+  nameWithType: AppCommand.paramsInt
+  fullName: BOOSEide.AppCommand.paramsInt
+- uid: BOOSEide.AppCommand.ProgramInstance
+  commentId: P:BOOSEide.AppCommand.ProgramInstance
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProgramInstance
+  name: ProgramInstance
+  nameWithType: AppCommand.ProgramInstance
+  fullName: BOOSEide.AppCommand.ProgramInstance
+- uid: BOOSEide.AppCommand.Name
+  commentId: P:BOOSEide.AppCommand.Name
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Name
+  name: Name
+  nameWithType: AppCommand.Name
+  fullName: BOOSEide.AppCommand.Name
+- uid: BOOSEide.AppCommand.ParameterList
+  commentId: P:BOOSEide.AppCommand.ParameterList
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ParameterList
+  name: ParameterList
+  nameWithType: AppCommand.ParameterList
+  fullName: BOOSEide.AppCommand.ParameterList
+- uid: BOOSEide.AppCommand.Parameters
+  commentId: P:BOOSEide.AppCommand.Parameters
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Parameters
+  name: Parameters
+  nameWithType: AppCommand.Parameters
+  fullName: BOOSEide.AppCommand.Parameters
+- uid: BOOSEide.AppCommand.ParamsInt
+  commentId: P:BOOSEide.AppCommand.ParamsInt
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ParamsInt
+  name: ParamsInt
+  nameWithType: AppCommand.ParamsInt
+  fullName: BOOSEide.AppCommand.ParamsInt
+- uid: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  commentId: M:BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  parent: BOOSEide.AppCommand
+  isExternal: true
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  name: Set(AppStoredProgram, string)
+  nameWithType: AppCommand.Set(AppStoredProgram, string)
+  fullName: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram, string)
+  nameWithType.vb: AppCommand.Set(AppStoredProgram, String)
+  fullName.vb: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram, String)
+  name.vb: Set(AppStoredProgram, String)
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+    name: Set
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  - name: (
+  - uid: BOOSEide.AppStoredProgram
+    name: AppStoredProgram
+    href: BOOSEide.AppStoredProgram.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+    name: Set
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  - name: (
+  - uid: BOOSEide.AppStoredProgram
+    name: AppStoredProgram
+    href: BOOSEide.AppStoredProgram.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCommand.Compile
+  commentId: M:BOOSEide.AppCommand.Compile
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Compile
+  name: Compile()
+  nameWithType: AppCommand.Compile()
+  fullName: BOOSEide.AppCommand.Compile()
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.Compile
+    name: Compile
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Compile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.Compile
+    name: Compile
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Compile
+  - name: (
+  - name: )
+- uid: BOOSEide.AppCommand.ProcessParameters(System.String)
+  commentId: M:BOOSEide.AppCommand.ProcessParameters(System.String)
+  parent: BOOSEide.AppCommand
+  isExternal: true
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_
+  name: ProcessParameters(string)
+  nameWithType: AppCommand.ProcessParameters(string)
+  fullName: BOOSEide.AppCommand.ProcessParameters(string)
+  nameWithType.vb: AppCommand.ProcessParameters(String)
+  fullName.vb: BOOSEide.AppCommand.ProcessParameters(String)
+  name.vb: ProcessParameters(String)
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.ProcessParameters(System.String)
+    name: ProcessParameters
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.ProcessParameters(System.String)
+    name: ProcessParameters
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCommand.ToString
+  commentId: M:BOOSEide.AppCommand.ToString
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString
+  name: ToString()
+  nameWithType: AppCommand.ToString()
+  fullName: BOOSEide.AppCommand.ToString()
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.ToString
+    name: ToString
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.ToString
+    name: ToString
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEide.AppPenColour.#ctor*
+  commentId: Overload:BOOSEide.AppPenColour.#ctor
+  href: BOOSEide.AppPenColour.html#BOOSEide_AppPenColour__ctor
+  name: AppPenColour
+  nameWithType: AppPenColour.AppPenColour
+  fullName: BOOSEide.AppPenColour.AppPenColour
+  nameWithType.vb: AppPenColour.New
+  fullName.vb: BOOSEide.AppPenColour.New
+  name.vb: New
+- uid: BOOSEide.IAppCanvas
+  commentId: T:BOOSEide.IAppCanvas
+  parent: BOOSEide
+  href: BOOSEide.IAppCanvas.html
+  name: IAppCanvas
+  nameWithType: IAppCanvas
+  fullName: BOOSEide.IAppCanvas
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BOOSEide.AppCommandThreeParameter.Execute
+  commentId: M:BOOSEide.AppCommandThreeParameter.Execute
+  parent: BOOSEide.AppCommandThreeParameter
+  href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_Execute
+  name: Execute()
+  nameWithType: AppCommandThreeParameter.Execute()
+  fullName: BOOSEide.AppCommandThreeParameter.Execute()
+  spec.csharp:
+  - uid: BOOSEide.AppCommandThreeParameter.Execute
+    name: Execute
+    href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommandThreeParameter.Execute
+    name: Execute
+    href: BOOSEide.AppCommandThreeParameter.html#BOOSEide_AppCommandThreeParameter_Execute
+  - name: (
+  - name: )
+- uid: BOOSEide.AppPenColour.Execute*
+  commentId: Overload:BOOSEide.AppPenColour.Execute
+  href: BOOSEide.AppPenColour.html#BOOSEide_AppPenColour_Execute
+  name: Execute
+  nameWithType: AppPenColour.Execute
+  fullName: BOOSEide.AppPenColour.Execute
+- uid: BOOSEide.IAppCommand.Execute
+  commentId: M:BOOSEide.IAppCommand.Execute
+  parent: BOOSEide.IAppCommand
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  name: Execute()
+  nameWithType: IAppCommand.Execute()
+  fullName: BOOSEide.IAppCommand.Execute()
+  spec.csharp:
+  - uid: BOOSEide.IAppCommand.Execute
+    name: Execute
+    href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.IAppCommand.Execute
+    name: Execute
+    href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  - name: (
+  - name: )

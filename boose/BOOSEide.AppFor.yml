@@ -1,0 +1,1122 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.AppFor
+  commentId: T:BOOSEide.AppFor
+  id: AppFor
+  parent: BOOSEide
+  children:
+  - BOOSEide.AppFor.#ctor
+  - BOOSEide.AppFor.Compile
+  - BOOSEide.AppFor.Execute
+  - BOOSEide.AppFor.FromValue
+  - BOOSEide.AppFor.Increment
+  - BOOSEide.AppFor.LCV
+  - BOOSEide.AppFor.LoopContinues
+  - BOOSEide.AppFor.StepValue
+  - BOOSEide.AppFor.ToValue
+  langs:
+  - csharp
+  - vb
+  name: AppFor
+  nameWithType: AppFor
+  fullName: BOOSEide.AppFor
+  type: Class
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: AppFor
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 12
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Represents a FOR loop command in a stored program.
+
+    Handles loop control variable declaration, evaluation of "from", "to", and "step" expressions,
+
+    and provides methods for loop continuation and incrementing.
+
+    Execution of the loop body is handled by <xref href="BOOSEide.AppEnd" data-throw-if-not-resolved="false"></xref> and the BOOSE program engine.
+  example: []
+  syntax:
+    content: 'public class AppFor : AppCompoundCommand, IAppCommand'
+    content.vb: Public Class AppFor Inherits AppCompoundCommand Implements IAppCommand
+  inheritance:
+  - System.Object
+  - BOOSEide.AppCommand
+  - BOOSEide.AppEvaluation
+  - BOOSEide.AppBoolean
+  - BOOSEide.AppConditionalCommand
+  - BOOSEide.AppCompoundCommand
+  implements:
+  - BOOSEide.IAppCommand
+  inheritedMembers:
+  - BOOSEide.AppCompoundCommand.CorrespondingCommand
+  - BOOSEide.AppCompoundCommand.CheckParameters(System.String[])
+  - BOOSEide.AppConditionalCommand.endLineNumber
+  - BOOSEide.AppConditionalCommand.LineNumber
+  - BOOSEide.AppConditionalCommand.EndLineNumber
+  - BOOSEide.AppConditionalCommand.ReturnLineNumber
+  - BOOSEide.AppConditionalCommand.CondType
+  - BOOSEide.AppConditionalCommand.Condition
+  - BOOSEide.AppEvaluation.expression
+  - BOOSEide.AppEvaluation.evaluatedExpression
+  - BOOSEide.AppEvaluation.varName
+  - BOOSEide.AppEvaluation.Value
+  - BOOSEide.AppEvaluation.IntValue
+  - BOOSEide.AppEvaluation.RealValue
+  - BOOSEide.AppEvaluation.BoolValue
+  - BOOSEide.AppEvaluation.Expression
+  - BOOSEide.AppEvaluation.VarName
+  - BOOSEide.AppEvaluation.Local
+  - BOOSEide.AppEvaluation.ProcessExpression(System.String)
+  - BOOSEide.AppCommand.IsDouble
+  - BOOSEide.AppCommand.Program
+  - BOOSEide.AppCommand.parameterList
+  - BOOSEide.AppCommand.parameters
+  - BOOSEide.AppCommand.paramsInt
+  - BOOSEide.AppCommand.ProgramInstance
+  - BOOSEide.AppCommand.Name
+  - BOOSEide.AppCommand.ParameterList
+  - BOOSEide.AppCommand.Parameters
+  - BOOSEide.AppCommand.ParamsInt
+  - BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  - BOOSEide.AppCommand.ProcessParameters(System.String)
+  - BOOSEide.AppCommand.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: BOOSEide.AppFor.LCV
+  commentId: F:BOOSEide.AppFor.LCV
+  id: LCV
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: LCV
+  nameWithType: AppFor.LCV
+  fullName: BOOSEide.AppFor.LCV
+  type: Field
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: LCV
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 18
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Loop Control Variable (LCV) for this FOR loop.
+
+    Stores the current value of the loop variable.
+  example: []
+  syntax:
+    content: public AppEvaluation LCV
+    return:
+      type: BOOSEide.AppEvaluation
+    content.vb: Public LCV As AppEvaluation
+- uid: BOOSEide.AppFor.FromValue
+  commentId: F:BOOSEide.AppFor.FromValue
+  id: FromValue
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: FromValue
+  nameWithType: AppFor.FromValue
+  fullName: BOOSEide.AppFor.FromValue
+  type: Field
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: FromValue
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 28
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Evaluated start value of the loop.
+  example: []
+  syntax:
+    content: public int FromValue
+    return:
+      type: System.Int32
+    content.vb: Public FromValue As Integer
+- uid: BOOSEide.AppFor.ToValue
+  commentId: F:BOOSEide.AppFor.ToValue
+  id: ToValue
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: ToValue
+  nameWithType: AppFor.ToValue
+  fullName: BOOSEide.AppFor.ToValue
+  type: Field
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: ToValue
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 33
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Evaluated end value of the loop.
+  example: []
+  syntax:
+    content: public int ToValue
+    return:
+      type: System.Int32
+    content.vb: Public ToValue As Integer
+- uid: BOOSEide.AppFor.StepValue
+  commentId: F:BOOSEide.AppFor.StepValue
+  id: StepValue
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: StepValue
+  nameWithType: AppFor.StepValue
+  fullName: BOOSEide.AppFor.StepValue
+  type: Field
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: StepValue
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 39
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Evaluated step value for incrementing the loop variable.
+
+    Can be negative for counting down.
+  example: []
+  syntax:
+    content: public int StepValue
+    return:
+      type: System.Int32
+    content.vb: Public StepValue As Integer
+- uid: BOOSEide.AppFor.#ctor
+  commentId: M:BOOSEide.AppFor.#ctor
+  id: '#ctor'
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: AppFor()
+  nameWithType: AppFor.AppFor()
+  fullName: BOOSEide.AppFor.AppFor()
+  type: Constructor
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: .ctor
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 44
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Default constructor.
+  example: []
+  syntax:
+    content: public AppFor()
+    content.vb: Public Sub New()
+  overload: BOOSEide.AppFor.#ctor*
+  nameWithType.vb: AppFor.New()
+  fullName.vb: BOOSEide.AppFor.New()
+  name.vb: New()
+- uid: BOOSEide.AppFor.Compile
+  commentId: M:BOOSEide.AppFor.Compile
+  id: Compile
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: Compile()
+  nameWithType: AppFor.Compile()
+  fullName: BOOSEide.AppFor.Compile()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Compile
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 50
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Compile-time: parses the FOR loop expression and creates the loop control variable.
+
+    Example expression: "i = 1 to 10 step 2".
+  example: []
+  syntax:
+    content: public override void Compile()
+    content.vb: Public Overrides Sub Compile()
+  overridden: BOOSEide.AppCompoundCommand.Compile
+  overload: BOOSEide.AppFor.Compile*
+  implements:
+  - BOOSEide.IAppCommand.Compile
+- uid: BOOSEide.AppFor.Execute
+  commentId: M:BOOSEide.AppFor.Execute
+  id: Execute
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: Execute()
+  nameWithType: AppFor.Execute()
+  fullName: BOOSEide.AppFor.Execute()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Execute
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 86
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: 'Run-time: evaluates "from", "to", and "step" expressions and initializes the loop variable.'
+  example: []
+  syntax:
+    content: public override void Execute()
+    content.vb: Public Overrides Sub Execute()
+  overridden: BOOSEide.AppConditionalCommand.Execute
+  overload: BOOSEide.AppFor.Execute*
+  implements:
+  - BOOSEide.IAppCommand.Execute
+- uid: BOOSEide.AppFor.LoopContinues
+  commentId: M:BOOSEide.AppFor.LoopContinues
+  id: LoopContinues
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: LoopContinues()
+  nameWithType: AppFor.LoopContinues()
+  fullName: BOOSEide.AppFor.LoopContinues()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: LoopContinues
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 125
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Checks whether the loop should continue based on the current loop variable value.
+
+    Used by <xref href="BOOSEide.AppEnd" data-throw-if-not-resolved="false"></xref> to determine loop execution.
+  example: []
+  syntax:
+    content: public bool LoopContinues()
+    return:
+      type: System.Boolean
+      description: True if the loop variable is within the range; otherwise false.
+    content.vb: Public Function LoopContinues() As Boolean
+  overload: BOOSEide.AppFor.LoopContinues*
+- uid: BOOSEide.AppFor.Increment
+  commentId: M:BOOSEide.AppFor.Increment
+  id: Increment
+  parent: BOOSEide.AppFor
+  langs:
+  - csharp
+  - vb
+  name: Increment()
+  nameWithType: AppFor.Increment()
+  fullName: BOOSEide.AppFor.Increment()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/AppFor.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Increment
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/AppFor.cs
+    startLine: 136
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Increments the loop variable by the step value.
+
+    Called by <xref href="BOOSEide.AppEnd" data-throw-if-not-resolved="false"></xref> when completing a loop iteration.
+  example: []
+  syntax:
+    content: public void Increment()
+    content.vb: Public Sub Increment()
+  overload: BOOSEide.AppFor.Increment*
+references:
+- uid: BOOSEide.AppEnd
+  commentId: T:BOOSEide.AppEnd
+  href: BOOSEide.AppEnd.html
+  name: AppEnd
+  nameWithType: AppEnd
+  fullName: BOOSEide.AppEnd
+- uid: BOOSEide
+  commentId: N:BOOSEide
+  href: BOOSEide.html
+  name: BOOSEide
+  nameWithType: BOOSEide
+  fullName: BOOSEide
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: BOOSEide.AppCommand
+  commentId: T:BOOSEide.AppCommand
+  parent: BOOSEide
+  href: BOOSEide.AppCommand.html
+  name: AppCommand
+  nameWithType: AppCommand
+  fullName: BOOSEide.AppCommand
+- uid: BOOSEide.AppEvaluation
+  commentId: T:BOOSEide.AppEvaluation
+  parent: BOOSEide
+  href: BOOSEide.AppEvaluation.html
+  name: AppEvaluation
+  nameWithType: AppEvaluation
+  fullName: BOOSEide.AppEvaluation
+- uid: BOOSEide.AppBoolean
+  commentId: T:BOOSEide.AppBoolean
+  parent: BOOSEide
+  href: BOOSEide.AppBoolean.html
+  name: AppBoolean
+  nameWithType: AppBoolean
+  fullName: BOOSEide.AppBoolean
+- uid: BOOSEide.AppConditionalCommand
+  commentId: T:BOOSEide.AppConditionalCommand
+  parent: BOOSEide
+  href: BOOSEide.AppConditionalCommand.html
+  name: AppConditionalCommand
+  nameWithType: AppConditionalCommand
+  fullName: BOOSEide.AppConditionalCommand
+- uid: BOOSEide.AppCompoundCommand
+  commentId: T:BOOSEide.AppCompoundCommand
+  parent: BOOSEide
+  href: BOOSEide.AppCompoundCommand.html
+  name: AppCompoundCommand
+  nameWithType: AppCompoundCommand
+  fullName: BOOSEide.AppCompoundCommand
+- uid: BOOSEide.IAppCommand
+  commentId: T:BOOSEide.IAppCommand
+  parent: BOOSEide
+  href: BOOSEide.IAppCommand.html
+  name: IAppCommand
+  nameWithType: IAppCommand
+  fullName: BOOSEide.IAppCommand
+- uid: BOOSEide.AppCompoundCommand.CorrespondingCommand
+  commentId: P:BOOSEide.AppCompoundCommand.CorrespondingCommand
+  parent: BOOSEide.AppCompoundCommand
+  href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_CorrespondingCommand
+  name: CorrespondingCommand
+  nameWithType: AppCompoundCommand.CorrespondingCommand
+  fullName: BOOSEide.AppCompoundCommand.CorrespondingCommand
+- uid: BOOSEide.AppCompoundCommand.CheckParameters(System.String[])
+  commentId: M:BOOSEide.AppCompoundCommand.CheckParameters(System.String[])
+  parent: BOOSEide.AppCompoundCommand
+  isExternal: true
+  href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_CheckParameters_System_String___
+  name: CheckParameters(string[])
+  nameWithType: AppCompoundCommand.CheckParameters(string[])
+  fullName: BOOSEide.AppCompoundCommand.CheckParameters(string[])
+  nameWithType.vb: AppCompoundCommand.CheckParameters(String())
+  fullName.vb: BOOSEide.AppCompoundCommand.CheckParameters(String())
+  name.vb: CheckParameters(String())
+  spec.csharp:
+  - uid: BOOSEide.AppCompoundCommand.CheckParameters(System.String[])
+    name: CheckParameters
+    href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCompoundCommand.CheckParameters(System.String[])
+    name: CheckParameters
+    href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_CheckParameters_System_String___
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+  - name: )
+- uid: BOOSEide.AppConditionalCommand.endLineNumber
+  commentId: F:BOOSEide.AppConditionalCommand.endLineNumber
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_endLineNumber
+  name: endLineNumber
+  nameWithType: AppConditionalCommand.endLineNumber
+  fullName: BOOSEide.AppConditionalCommand.endLineNumber
+- uid: BOOSEide.AppConditionalCommand.LineNumber
+  commentId: P:BOOSEide.AppConditionalCommand.LineNumber
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_LineNumber
+  name: LineNumber
+  nameWithType: AppConditionalCommand.LineNumber
+  fullName: BOOSEide.AppConditionalCommand.LineNumber
+- uid: BOOSEide.AppConditionalCommand.EndLineNumber
+  commentId: P:BOOSEide.AppConditionalCommand.EndLineNumber
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_EndLineNumber
+  name: EndLineNumber
+  nameWithType: AppConditionalCommand.EndLineNumber
+  fullName: BOOSEide.AppConditionalCommand.EndLineNumber
+- uid: BOOSEide.AppConditionalCommand.ReturnLineNumber
+  commentId: P:BOOSEide.AppConditionalCommand.ReturnLineNumber
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_ReturnLineNumber
+  name: ReturnLineNumber
+  nameWithType: AppConditionalCommand.ReturnLineNumber
+  fullName: BOOSEide.AppConditionalCommand.ReturnLineNumber
+- uid: BOOSEide.AppConditionalCommand.CondType
+  commentId: P:BOOSEide.AppConditionalCommand.CondType
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_CondType
+  name: CondType
+  nameWithType: AppConditionalCommand.CondType
+  fullName: BOOSEide.AppConditionalCommand.CondType
+- uid: BOOSEide.AppConditionalCommand.Condition
+  commentId: P:BOOSEide.AppConditionalCommand.Condition
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_Condition
+  name: Condition
+  nameWithType: AppConditionalCommand.Condition
+  fullName: BOOSEide.AppConditionalCommand.Condition
+- uid: BOOSEide.AppEvaluation.expression
+  commentId: F:BOOSEide.AppEvaluation.expression
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_expression
+  name: expression
+  nameWithType: AppEvaluation.expression
+  fullName: BOOSEide.AppEvaluation.expression
+- uid: BOOSEide.AppEvaluation.evaluatedExpression
+  commentId: F:BOOSEide.AppEvaluation.evaluatedExpression
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_evaluatedExpression
+  name: evaluatedExpression
+  nameWithType: AppEvaluation.evaluatedExpression
+  fullName: BOOSEide.AppEvaluation.evaluatedExpression
+- uid: BOOSEide.AppEvaluation.varName
+  commentId: F:BOOSEide.AppEvaluation.varName
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_varName
+  name: varName
+  nameWithType: AppEvaluation.varName
+  fullName: BOOSEide.AppEvaluation.varName
+- uid: BOOSEide.AppEvaluation.Value
+  commentId: P:BOOSEide.AppEvaluation.Value
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_Value
+  name: Value
+  nameWithType: AppEvaluation.Value
+  fullName: BOOSEide.AppEvaluation.Value
+- uid: BOOSEide.AppEvaluation.IntValue
+  commentId: P:BOOSEide.AppEvaluation.IntValue
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_IntValue
+  name: IntValue
+  nameWithType: AppEvaluation.IntValue
+  fullName: BOOSEide.AppEvaluation.IntValue
+- uid: BOOSEide.AppEvaluation.RealValue
+  commentId: P:BOOSEide.AppEvaluation.RealValue
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_RealValue
+  name: RealValue
+  nameWithType: AppEvaluation.RealValue
+  fullName: BOOSEide.AppEvaluation.RealValue
+- uid: BOOSEide.AppEvaluation.BoolValue
+  commentId: P:BOOSEide.AppEvaluation.BoolValue
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_BoolValue
+  name: BoolValue
+  nameWithType: AppEvaluation.BoolValue
+  fullName: BOOSEide.AppEvaluation.BoolValue
+- uid: BOOSEide.AppEvaluation.Expression
+  commentId: P:BOOSEide.AppEvaluation.Expression
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_Expression
+  name: Expression
+  nameWithType: AppEvaluation.Expression
+  fullName: BOOSEide.AppEvaluation.Expression
+- uid: BOOSEide.AppEvaluation.VarName
+  commentId: P:BOOSEide.AppEvaluation.VarName
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_VarName
+  name: VarName
+  nameWithType: AppEvaluation.VarName
+  fullName: BOOSEide.AppEvaluation.VarName
+- uid: BOOSEide.AppEvaluation.Local
+  commentId: P:BOOSEide.AppEvaluation.Local
+  parent: BOOSEide.AppEvaluation
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_Local
+  name: Local
+  nameWithType: AppEvaluation.Local
+  fullName: BOOSEide.AppEvaluation.Local
+- uid: BOOSEide.AppEvaluation.ProcessExpression(System.String)
+  commentId: M:BOOSEide.AppEvaluation.ProcessExpression(System.String)
+  parent: BOOSEide.AppEvaluation
+  isExternal: true
+  href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_ProcessExpression_System_String_
+  name: ProcessExpression(string)
+  nameWithType: AppEvaluation.ProcessExpression(string)
+  fullName: BOOSEide.AppEvaluation.ProcessExpression(string)
+  nameWithType.vb: AppEvaluation.ProcessExpression(String)
+  fullName.vb: BOOSEide.AppEvaluation.ProcessExpression(String)
+  name.vb: ProcessExpression(String)
+  spec.csharp:
+  - uid: BOOSEide.AppEvaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_ProcessExpression_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppEvaluation.ProcessExpression(System.String)
+    name: ProcessExpression
+    href: BOOSEide.AppEvaluation.html#BOOSEide_AppEvaluation_ProcessExpression_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCommand.IsDouble
+  commentId: F:BOOSEide.AppCommand.IsDouble
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_IsDouble
+  name: IsDouble
+  nameWithType: AppCommand.IsDouble
+  fullName: BOOSEide.AppCommand.IsDouble
+- uid: BOOSEide.AppCommand.Program
+  commentId: F:BOOSEide.AppCommand.Program
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Program
+  name: Program
+  nameWithType: AppCommand.Program
+  fullName: BOOSEide.AppCommand.Program
+- uid: BOOSEide.AppCommand.parameterList
+  commentId: F:BOOSEide.AppCommand.parameterList
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_parameterList
+  name: parameterList
+  nameWithType: AppCommand.parameterList
+  fullName: BOOSEide.AppCommand.parameterList
+- uid: BOOSEide.AppCommand.parameters
+  commentId: F:BOOSEide.AppCommand.parameters
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_parameters
+  name: parameters
+  nameWithType: AppCommand.parameters
+  fullName: BOOSEide.AppCommand.parameters
+- uid: BOOSEide.AppCommand.paramsInt
+  commentId: F:BOOSEide.AppCommand.paramsInt
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_paramsInt
+  name: paramsInt
+  nameWithType: AppCommand.paramsInt
+  fullName: BOOSEide.AppCommand.paramsInt
+- uid: BOOSEide.AppCommand.ProgramInstance
+  commentId: P:BOOSEide.AppCommand.ProgramInstance
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProgramInstance
+  name: ProgramInstance
+  nameWithType: AppCommand.ProgramInstance
+  fullName: BOOSEide.AppCommand.ProgramInstance
+- uid: BOOSEide.AppCommand.Name
+  commentId: P:BOOSEide.AppCommand.Name
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Name
+  name: Name
+  nameWithType: AppCommand.Name
+  fullName: BOOSEide.AppCommand.Name
+- uid: BOOSEide.AppCommand.ParameterList
+  commentId: P:BOOSEide.AppCommand.ParameterList
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ParameterList
+  name: ParameterList
+  nameWithType: AppCommand.ParameterList
+  fullName: BOOSEide.AppCommand.ParameterList
+- uid: BOOSEide.AppCommand.Parameters
+  commentId: P:BOOSEide.AppCommand.Parameters
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Parameters
+  name: Parameters
+  nameWithType: AppCommand.Parameters
+  fullName: BOOSEide.AppCommand.Parameters
+- uid: BOOSEide.AppCommand.ParamsInt
+  commentId: P:BOOSEide.AppCommand.ParamsInt
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ParamsInt
+  name: ParamsInt
+  nameWithType: AppCommand.ParamsInt
+  fullName: BOOSEide.AppCommand.ParamsInt
+- uid: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  commentId: M:BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+  parent: BOOSEide.AppCommand
+  isExternal: true
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  name: Set(AppStoredProgram, string)
+  nameWithType: AppCommand.Set(AppStoredProgram, string)
+  fullName: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram, string)
+  nameWithType.vb: AppCommand.Set(AppStoredProgram, String)
+  fullName.vb: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram, String)
+  name.vb: Set(AppStoredProgram, String)
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+    name: Set
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  - name: (
+  - uid: BOOSEide.AppStoredProgram
+    name: AppStoredProgram
+    href: BOOSEide.AppStoredProgram.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.Set(BOOSEide.AppStoredProgram,System.String)
+    name: Set
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_Set_BOOSEide_AppStoredProgram_System_String_
+  - name: (
+  - uid: BOOSEide.AppStoredProgram
+    name: AppStoredProgram
+    href: BOOSEide.AppStoredProgram.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCommand.ProcessParameters(System.String)
+  commentId: M:BOOSEide.AppCommand.ProcessParameters(System.String)
+  parent: BOOSEide.AppCommand
+  isExternal: true
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_
+  name: ProcessParameters(string)
+  nameWithType: AppCommand.ProcessParameters(string)
+  fullName: BOOSEide.AppCommand.ProcessParameters(string)
+  nameWithType.vb: AppCommand.ProcessParameters(String)
+  fullName.vb: BOOSEide.AppCommand.ProcessParameters(String)
+  name.vb: ProcessParameters(String)
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.ProcessParameters(System.String)
+    name: ProcessParameters
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.ProcessParameters(System.String)
+    name: ProcessParameters
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ProcessParameters_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: BOOSEide.AppCommand.ToString
+  commentId: M:BOOSEide.AppCommand.ToString
+  parent: BOOSEide.AppCommand
+  href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString
+  name: ToString()
+  nameWithType: AppCommand.ToString()
+  fullName: BOOSEide.AppCommand.ToString()
+  spec.csharp:
+  - uid: BOOSEide.AppCommand.ToString
+    name: ToString
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCommand.ToString
+    name: ToString
+    href: BOOSEide.AppCommand.html#BOOSEide_AppCommand_ToString
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: BOOSEide.AppFor.#ctor*
+  commentId: Overload:BOOSEide.AppFor.#ctor
+  href: BOOSEide.AppFor.html#BOOSEide_AppFor__ctor
+  name: AppFor
+  nameWithType: AppFor.AppFor
+  fullName: BOOSEide.AppFor.AppFor
+  nameWithType.vb: AppFor.New
+  fullName.vb: BOOSEide.AppFor.New
+  name.vb: New
+- uid: BOOSEide.AppCompoundCommand.Compile
+  commentId: M:BOOSEide.AppCompoundCommand.Compile
+  parent: BOOSEide.AppCompoundCommand
+  href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_Compile
+  name: Compile()
+  nameWithType: AppCompoundCommand.Compile()
+  fullName: BOOSEide.AppCompoundCommand.Compile()
+  spec.csharp:
+  - uid: BOOSEide.AppCompoundCommand.Compile
+    name: Compile
+    href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_Compile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppCompoundCommand.Compile
+    name: Compile
+    href: BOOSEide.AppCompoundCommand.html#BOOSEide_AppCompoundCommand_Compile
+  - name: (
+  - name: )
+- uid: BOOSEide.AppFor.Compile*
+  commentId: Overload:BOOSEide.AppFor.Compile
+  href: BOOSEide.AppFor.html#BOOSEide_AppFor_Compile
+  name: Compile
+  nameWithType: AppFor.Compile
+  fullName: BOOSEide.AppFor.Compile
+- uid: BOOSEide.IAppCommand.Compile
+  commentId: M:BOOSEide.IAppCommand.Compile
+  parent: BOOSEide.IAppCommand
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Compile
+  name: Compile()
+  nameWithType: IAppCommand.Compile()
+  fullName: BOOSEide.IAppCommand.Compile()
+  spec.csharp:
+  - uid: BOOSEide.IAppCommand.Compile
+    name: Compile
+    href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Compile
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.IAppCommand.Compile
+    name: Compile
+    href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Compile
+  - name: (
+  - name: )
+- uid: BOOSEide.AppConditionalCommand.Execute
+  commentId: M:BOOSEide.AppConditionalCommand.Execute
+  parent: BOOSEide.AppConditionalCommand
+  href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_Execute
+  name: Execute()
+  nameWithType: AppConditionalCommand.Execute()
+  fullName: BOOSEide.AppConditionalCommand.Execute()
+  spec.csharp:
+  - uid: BOOSEide.AppConditionalCommand.Execute
+    name: Execute
+    href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.AppConditionalCommand.Execute
+    name: Execute
+    href: BOOSEide.AppConditionalCommand.html#BOOSEide_AppConditionalCommand_Execute
+  - name: (
+  - name: )
+- uid: BOOSEide.AppFor.Execute*
+  commentId: Overload:BOOSEide.AppFor.Execute
+  href: BOOSEide.AppFor.html#BOOSEide_AppFor_Execute
+  name: Execute
+  nameWithType: AppFor.Execute
+  fullName: BOOSEide.AppFor.Execute
+- uid: BOOSEide.IAppCommand.Execute
+  commentId: M:BOOSEide.IAppCommand.Execute
+  parent: BOOSEide.IAppCommand
+  href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  name: Execute()
+  nameWithType: IAppCommand.Execute()
+  fullName: BOOSEide.IAppCommand.Execute()
+  spec.csharp:
+  - uid: BOOSEide.IAppCommand.Execute
+    name: Execute
+    href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: BOOSEide.IAppCommand.Execute
+    name: Execute
+    href: BOOSEide.IAppCommand.html#BOOSEide_IAppCommand_Execute
+  - name: (
+  - name: )
+- uid: BOOSEide.AppFor.LoopContinues*
+  commentId: Overload:BOOSEide.AppFor.LoopContinues
+  href: BOOSEide.AppFor.html#BOOSEide_AppFor_LoopContinues
+  name: LoopContinues
+  nameWithType: AppFor.LoopContinues
+  fullName: BOOSEide.AppFor.LoopContinues
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BOOSEide.AppFor.Increment*
+  commentId: Overload:BOOSEide.AppFor.Increment
+  href: BOOSEide.AppFor.html#BOOSEide_AppFor_Increment
+  name: Increment
+  nameWithType: AppFor.Increment
+  fullName: BOOSEide.AppFor.Increment

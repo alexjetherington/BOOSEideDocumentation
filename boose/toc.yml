@@ -1,0 +1,146 @@
+### YamlMime:TableOfContent
+items:
+- uid: BOOSEide
+  name: BOOSEide
+  type: Namespace
+  items:
+  - uid: BOOSEide.AppBoolean
+    name: AppBoolean
+    type: Class
+  - uid: BOOSEide.AppCall
+    name: AppCall
+    type: Class
+  - uid: BOOSEide.AppCanvas
+    name: AppCanvas
+    type: Class
+  - uid: BOOSEide.AppCanvasCommand
+    name: AppCanvasCommand
+    type: Class
+  - uid: BOOSEide.AppCast
+    name: AppCast
+    type: Class
+  - uid: BOOSEide.AppCircle
+    name: AppCircle
+    type: Class
+  - uid: BOOSEide.AppCommand
+    name: AppCommand
+    type: Class
+  - uid: BOOSEide.AppCommandFactory
+    name: AppCommandFactory
+    type: Class
+  - uid: BOOSEide.AppCommandOneParameter
+    name: AppCommandOneParameter
+    type: Class
+  - uid: BOOSEide.AppCommandThreeParameter
+    name: AppCommandThreeParameter
+    type: Class
+  - uid: BOOSEide.AppCommandTwoParameter
+    name: AppCommandTwoParameter
+    type: Class
+  - uid: BOOSEide.AppCompoundCommand
+    name: AppCompoundCommand
+    type: Class
+  - uid: BOOSEide.AppConditionalCommand
+    name: AppConditionalCommand
+    type: Class
+  - uid: BOOSEide.AppConditionalCommand.ConditionalTypes
+    name: AppConditionalCommand.ConditionalTypes
+    type: Enum
+  - uid: BOOSEide.AppDrawTo
+    name: AppDrawTo
+    type: Class
+  - uid: BOOSEide.AppElse
+    name: AppElse
+    type: Class
+  - uid: BOOSEide.AppEnd
+    name: AppEnd
+    type: Class
+  - uid: BOOSEide.AppEvaluation
+    name: AppEvaluation
+    type: Class
+  - uid: BOOSEide.AppFor
+    name: AppFor
+    type: Class
+  - uid: BOOSEide.AppIf
+    name: AppIf
+    type: Class
+  - uid: BOOSEide.AppInt
+    name: AppInt
+    type: Class
+  - uid: BOOSEide.AppMethod
+    name: AppMethod
+    type: Class
+  - uid: BOOSEide.AppMoveto
+    name: AppMoveto
+    type: Class
+  - uid: BOOSEide.AppParser
+    name: AppParser
+    type: Class
+  - uid: BOOSEide.AppPenColour
+    name: AppPenColour
+    type: Class
+  - uid: BOOSEide.AppReal
+    name: AppReal
+    type: Class
+  - uid: BOOSEide.AppRect
+    name: AppRect
+    type: Class
+  - uid: BOOSEide.AppStoredProgram
+    name: AppStoredProgram
+    type: Class
+  - uid: BOOSEide.AppWhile
+    name: AppWhile
+    type: Class
+  - uid: BOOSEide.AppWrite
+    name: AppWrite
+    type: Class
+  - uid: BOOSEide.GUI
+    name: GUI
+    type: Class
+  - uid: BOOSEide.IAppCanvas
+    name: IAppCanvas
+    type: Interface
+  - uid: BOOSEide.IAppCommand
+    name: IAppCommand
+    type: Interface
+  - uid: BOOSEide.IAppCommandFactory
+    name: IAppCommandFactory
+    type: Interface
+  - uid: BOOSEide.IAppParser
+    name: IAppParser
+    type: Interface
+  - uid: BOOSEide.IAppStoredProgram
+    name: IAppStoredProgram
+    type: Interface
+  - uid: BOOSEide.Program
+    name: Program
+    type: Class
+- uid: BOOSEide.Tests
+  name: BOOSEide.Tests
+  type: Namespace
+  items:
+  - uid: BOOSEide.Tests.AppCanvasTests
+    name: AppCanvasTests
+    type: Class
+  - uid: BOOSEide.Tests.AppElseTests
+    name: AppElseTests
+    type: Class
+  - uid: BOOSEide.Tests.AppForTests
+    name: AppForTests
+    type: Class
+  - uid: BOOSEide.Tests.AppIfTests
+    name: AppIfTests
+    type: Class
+  - uid: BOOSEide.Tests.AppIntTests
+    name: AppIntTests
+    type: Class
+  - uid: BOOSEide.Tests.AppRealTests
+    name: AppRealTests
+    type: Class
+  - uid: BOOSEide.Tests.AppWhileTests
+    name: AppWhileTests
+    type: Class
+  - uid: BOOSEide.Tests.TestCommandFactory
+    name: TestCommandFactory
+    type: Class
+memberLayout: SamePage

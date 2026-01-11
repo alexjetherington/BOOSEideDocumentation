@@ -1,0 +1,178 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.IAppParser
+  commentId: T:BOOSEide.IAppParser
+  id: IAppParser
+  parent: BOOSEide
+  children:
+  - BOOSEide.IAppParser.ParseCommand(System.String)
+  - BOOSEide.IAppParser.ParseProgram(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAppParser
+  nameWithType: IAppParser
+  fullName: BOOSEide.IAppParser
+  type: Interface
+  source:
+    remote:
+      path: BOOSEide/IAppParser.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: IAppParser
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppParser.cs
+    startLine: 8
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Interface for a parser that converts BOOSE script lines or full programs
+
+    into <xref href="BOOSEide.IAppCommand" data-throw-if-not-resolved="false"></xref> instances compatible with <xref href="BOOSEide.AppStoredProgram" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IAppParser
+    content.vb: Public Interface IAppParser
+- uid: BOOSEide.IAppParser.ParseCommand(System.String)
+  commentId: M:BOOSEide.IAppParser.ParseCommand(System.String)
+  id: ParseCommand(System.String)
+  parent: BOOSEide.IAppParser
+  langs:
+  - csharp
+  - vb
+  name: ParseCommand(string)
+  nameWithType: IAppParser.ParseCommand(string)
+  fullName: BOOSEide.IAppParser.ParseCommand(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppParser.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: ParseCommand
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppParser.cs
+    startLine: 20
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Parses a single line of BOOSE code into a corresponding <xref href="BOOSEide.IAppCommand" data-throw-if-not-resolved="false"></xref>.
+
+    Evaluates the first token to determine the type of command, handles variable
+
+    declarations, assignments, and normal commands.
+  example: []
+  syntax:
+    content: IAppCommand? ParseCommand(string line)
+    parameters:
+    - id: line
+      type: System.String
+      description: A single line of BOOSE code to parse.
+    return:
+      type: BOOSEide.IAppCommand
+      description: >-
+        An <xref href="BOOSEide.IAppCommand" data-throw-if-not-resolved="false"></xref> representing the parsed command,
+
+        or null if the line is empty or a comment.
+    content.vb: Function ParseCommand(line As String) As IAppCommand
+  overload: BOOSEide.IAppParser.ParseCommand*
+  nameWithType.vb: IAppParser.ParseCommand(String)
+  fullName.vb: BOOSEide.IAppParser.ParseCommand(String)
+  name.vb: ParseCommand(String)
+- uid: BOOSEide.IAppParser.ParseProgram(System.String)
+  commentId: M:BOOSEide.IAppParser.ParseProgram(System.String)
+  id: ParseProgram(System.String)
+  parent: BOOSEide.IAppParser
+  langs:
+  - csharp
+  - vb
+  name: ParseProgram(string)
+  nameWithType: IAppParser.ParseProgram(string)
+  fullName: BOOSEide.IAppParser.ParseProgram(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppParser.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: ParseProgram
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppParser.cs
+    startLine: 28
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Parses a full multi-line BOOSE program, producing commands and registering
+
+    variables in the given <xref href="BOOSEide.AppStoredProgram" data-throw-if-not-resolved="false"></xref> context.
+
+    Syntax errors are collected and may throw a <xref href="BOOSE.ParserException" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: void ParseProgram(string program)
+    parameters:
+    - id: program
+      type: System.String
+      description: The full program text to parse, potentially multiple lines.
+    content.vb: Sub ParseProgram(program As String)
+  overload: BOOSEide.IAppParser.ParseProgram*
+  nameWithType.vb: IAppParser.ParseProgram(String)
+  fullName.vb: BOOSEide.IAppParser.ParseProgram(String)
+  name.vb: ParseProgram(String)
+references:
+- uid: BOOSEide.IAppCommand
+  commentId: T:BOOSEide.IAppCommand
+  parent: BOOSEide
+  href: BOOSEide.IAppCommand.html
+  name: IAppCommand
+  nameWithType: IAppCommand
+  fullName: BOOSEide.IAppCommand
+- uid: BOOSEide.AppStoredProgram
+  commentId: T:BOOSEide.AppStoredProgram
+  parent: BOOSEide
+  href: BOOSEide.AppStoredProgram.html
+  name: AppStoredProgram
+  nameWithType: AppStoredProgram
+  fullName: BOOSEide.AppStoredProgram
+- uid: BOOSEide
+  commentId: N:BOOSEide
+  href: BOOSEide.html
+  name: BOOSEide
+  nameWithType: BOOSEide
+  fullName: BOOSEide
+- uid: BOOSEide.IAppParser.ParseCommand*
+  commentId: Overload:BOOSEide.IAppParser.ParseCommand
+  href: BOOSEide.IAppParser.html#BOOSEide_IAppParser_ParseCommand_System_String_
+  name: ParseCommand
+  nameWithType: IAppParser.ParseCommand
+  fullName: BOOSEide.IAppParser.ParseCommand
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSE.ParserException
+  commentId: T:BOOSE.ParserException
+  isExternal: true
+  name: ParserException
+  nameWithType: ParserException
+  fullName: BOOSE.ParserException
+- uid: BOOSEide.IAppParser.ParseProgram*
+  commentId: Overload:BOOSEide.IAppParser.ParseProgram
+  href: BOOSEide.IAppParser.html#BOOSEide_IAppParser_ParseProgram_System_String_
+  name: ParseProgram
+  nameWithType: IAppParser.ParseProgram
+  fullName: BOOSEide.IAppParser.ParseProgram

@@ -1,0 +1,519 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.IAppStoredProgram
+  commentId: T:BOOSEide.IAppStoredProgram
+  id: IAppStoredProgram
+  parent: BOOSEide
+  children:
+  - BOOSEide.IAppStoredProgram.Add(BOOSEide.AppCommand)
+  - BOOSEide.IAppStoredProgram.AddVariable(BOOSEide.AppEvaluation)
+  - BOOSEide.IAppStoredProgram.Commandsleft
+  - BOOSEide.IAppStoredProgram.EvaluateExpression(System.String)
+  - BOOSEide.IAppStoredProgram.GetVarValue(System.String)
+  - BOOSEide.IAppStoredProgram.IsExpression(System.String)
+  - BOOSEide.IAppStoredProgram.PC
+  - BOOSEide.IAppStoredProgram.ResetProgram
+  - BOOSEide.IAppStoredProgram.Run
+  - BOOSEide.IAppStoredProgram.VariableExists(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAppStoredProgram
+  nameWithType: IAppStoredProgram
+  fullName: BOOSEide.IAppStoredProgram
+  type: Interface
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: IAppStoredProgram
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 8
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Interface representing a stored program that manages commands, variables,
+
+    and program execution using App* classes.
+  example: []
+  syntax:
+    content: public interface IAppStoredProgram
+    content.vb: Public Interface IAppStoredProgram
+- uid: BOOSEide.IAppStoredProgram.PC
+  commentId: P:BOOSEide.IAppStoredProgram.PC
+  id: PC
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: PC
+  nameWithType: IAppStoredProgram.PC
+  fullName: BOOSEide.IAppStoredProgram.PC
+  type: Property
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: PC
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 14
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Gets or sets the program counter (PC), representing the index of the
+
+    current command being executed.
+  example: []
+  syntax:
+    content: int PC { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property PC As Integer
+  overload: BOOSEide.IAppStoredProgram.PC*
+- uid: BOOSEide.IAppStoredProgram.AddVariable(BOOSEide.AppEvaluation)
+  commentId: M:BOOSEide.IAppStoredProgram.AddVariable(BOOSEide.AppEvaluation)
+  id: AddVariable(BOOSEide.AppEvaluation)
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: AddVariable(AppEvaluation)
+  nameWithType: IAppStoredProgram.AddVariable(AppEvaluation)
+  fullName: BOOSEide.IAppStoredProgram.AddVariable(BOOSEide.AppEvaluation)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: AddVariable
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 20
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Adds a variable to the program's variable list.
+  example: []
+  syntax:
+    content: void AddVariable(AppEvaluation variable)
+    parameters:
+    - id: variable
+      type: BOOSEide.AppEvaluation
+      description: The <xref href="BOOSEide.AppEvaluation" data-throw-if-not-resolved="false"></xref> variable to add.
+    content.vb: Sub AddVariable(variable As AppEvaluation)
+  overload: BOOSEide.IAppStoredProgram.AddVariable*
+- uid: BOOSEide.IAppStoredProgram.VariableExists(System.String)
+  commentId: M:BOOSEide.IAppStoredProgram.VariableExists(System.String)
+  id: VariableExists(System.String)
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: VariableExists(string)
+  nameWithType: IAppStoredProgram.VariableExists(string)
+  fullName: BOOSEide.IAppStoredProgram.VariableExists(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: VariableExists
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 27
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Checks if a variable with the given name exists in the program.
+  example: []
+  syntax:
+    content: bool VariableExists(string varName)
+    parameters:
+    - id: varName
+      type: System.String
+      description: The variable name to check.
+    return:
+      type: System.Boolean
+      description: True if the variable exists; otherwise false.
+    content.vb: Function VariableExists(varName As String) As Boolean
+  overload: BOOSEide.IAppStoredProgram.VariableExists*
+  nameWithType.vb: IAppStoredProgram.VariableExists(String)
+  fullName.vb: BOOSEide.IAppStoredProgram.VariableExists(String)
+  name.vb: VariableExists(String)
+- uid: BOOSEide.IAppStoredProgram.GetVarValue(System.String)
+  commentId: M:BOOSEide.IAppStoredProgram.GetVarValue(System.String)
+  id: GetVarValue(System.String)
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: GetVarValue(string)
+  nameWithType: IAppStoredProgram.GetVarValue(string)
+  fullName: BOOSEide.IAppStoredProgram.GetVarValue(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: GetVarValue
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 34
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Retrieves the value of a variable as a string, regardless of its type.
+  example: []
+  syntax:
+    content: string GetVarValue(string varName)
+    parameters:
+    - id: varName
+      type: System.String
+      description: The name of the variable.
+    return:
+      type: System.String
+      description: The variable's value converted to a string.
+    content.vb: Function GetVarValue(varName As String) As String
+  overload: BOOSEide.IAppStoredProgram.GetVarValue*
+  nameWithType.vb: IAppStoredProgram.GetVarValue(String)
+  fullName.vb: BOOSEide.IAppStoredProgram.GetVarValue(String)
+  name.vb: GetVarValue(String)
+- uid: BOOSEide.IAppStoredProgram.IsExpression(System.String)
+  commentId: M:BOOSEide.IAppStoredProgram.IsExpression(System.String)
+  id: IsExpression(System.String)
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: IsExpression(string)
+  nameWithType: IAppStoredProgram.IsExpression(string)
+  fullName: BOOSEide.IAppStoredProgram.IsExpression(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: IsExpression
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 42
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Determines whether a given string should be treated as an expression
+
+    rather than a literal value.
+  example: []
+  syntax:
+    content: bool IsExpression(string expression)
+    parameters:
+    - id: expression
+      type: System.String
+      description: The string to check.
+    return:
+      type: System.Boolean
+      description: True if it contains operators or variable references; otherwise false.
+    content.vb: Function IsExpression(expression As String) As Boolean
+  overload: BOOSEide.IAppStoredProgram.IsExpression*
+  nameWithType.vb: IAppStoredProgram.IsExpression(String)
+  fullName.vb: BOOSEide.IAppStoredProgram.IsExpression(String)
+  name.vb: IsExpression(String)
+- uid: BOOSEide.IAppStoredProgram.EvaluateExpression(System.String)
+  commentId: M:BOOSEide.IAppStoredProgram.EvaluateExpression(System.String)
+  id: EvaluateExpression(System.String)
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: EvaluateExpression(string)
+  nameWithType: IAppStoredProgram.EvaluateExpression(string)
+  fullName: BOOSEide.IAppStoredProgram.EvaluateExpression(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: EvaluateExpression
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 50
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Evaluates an expression string and returns the result as a string.
+
+    Variables within the expression are resolved to their current values.
+  example: []
+  syntax:
+    content: string EvaluateExpression(string exp)
+    parameters:
+    - id: exp
+      type: System.String
+      description: The expression to evaluate.
+    return:
+      type: System.String
+      description: The evaluated result as a string.
+    content.vb: Function EvaluateExpression(exp As String) As String
+  overload: BOOSEide.IAppStoredProgram.EvaluateExpression*
+  nameWithType.vb: IAppStoredProgram.EvaluateExpression(String)
+  fullName.vb: BOOSEide.IAppStoredProgram.EvaluateExpression(String)
+  name.vb: EvaluateExpression(String)
+- uid: BOOSEide.IAppStoredProgram.Add(BOOSEide.AppCommand)
+  commentId: M:BOOSEide.IAppStoredProgram.Add(BOOSEide.AppCommand)
+  id: Add(BOOSEide.AppCommand)
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: Add(AppCommand)
+  nameWithType: IAppStoredProgram.Add(AppCommand)
+  fullName: BOOSEide.IAppStoredProgram.Add(BOOSEide.AppCommand)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Add
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 57
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Adds a command to the stored program's command list.
+  example: []
+  syntax:
+    content: int Add(AppCommand c)
+    parameters:
+    - id: c
+      type: BOOSEide.AppCommand
+      description: The <xref href="BOOSEide.AppCommand" data-throw-if-not-resolved="false"></xref> to add.
+    return:
+      type: System.Int32
+      description: The index of the added command in the program.
+    content.vb: Function Add(c As AppCommand) As Integer
+  overload: BOOSEide.IAppStoredProgram.Add*
+- uid: BOOSEide.IAppStoredProgram.ResetProgram
+  commentId: M:BOOSEide.IAppStoredProgram.ResetProgram
+  id: ResetProgram
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: ResetProgram()
+  nameWithType: IAppStoredProgram.ResetProgram()
+  fullName: BOOSEide.IAppStoredProgram.ResetProgram()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: ResetProgram
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 63
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Resets the program to its initial state.
+
+    Clears all commands, variables, and resets the program counter.
+  example: []
+  syntax:
+    content: void ResetProgram()
+    content.vb: Sub ResetProgram()
+  overload: BOOSEide.IAppStoredProgram.ResetProgram*
+- uid: BOOSEide.IAppStoredProgram.Commandsleft
+  commentId: M:BOOSEide.IAppStoredProgram.Commandsleft
+  id: Commandsleft
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: Commandsleft()
+  nameWithType: IAppStoredProgram.Commandsleft()
+  fullName: BOOSEide.IAppStoredProgram.Commandsleft()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Commandsleft
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 70
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Checks whether there are any commands remaining to be executed
+
+    from the current program counter position.
+  example: []
+  syntax:
+    content: bool Commandsleft()
+    return:
+      type: System.Boolean
+      description: True if commands remain; otherwise false.
+    content.vb: Function Commandsleft() As Boolean
+  overload: BOOSEide.IAppStoredProgram.Commandsleft*
+- uid: BOOSEide.IAppStoredProgram.Run
+  commentId: M:BOOSEide.IAppStoredProgram.Run
+  id: Run
+  parent: BOOSEide.IAppStoredProgram
+  langs:
+  - csharp
+  - vb
+  name: Run()
+  nameWithType: IAppStoredProgram.Run()
+  fullName: BOOSEide.IAppStoredProgram.Run()
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppStoredProgram.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: Run
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppStoredProgram.cs
+    startLine: 76
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Executes the stored program starting from the current program counter.
+
+    Updates variables and program state as commands are executed.
+  example: []
+  syntax:
+    content: void Run()
+    content.vb: Sub Run()
+  overload: BOOSEide.IAppStoredProgram.Run*
+references:
+- uid: BOOSEide
+  commentId: N:BOOSEide
+  href: BOOSEide.html
+  name: BOOSEide
+  nameWithType: BOOSEide
+  fullName: BOOSEide
+- uid: BOOSEide.IAppStoredProgram.PC*
+  commentId: Overload:BOOSEide.IAppStoredProgram.PC
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_PC
+  name: PC
+  nameWithType: IAppStoredProgram.PC
+  fullName: BOOSEide.IAppStoredProgram.PC
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: BOOSEide.AppEvaluation
+  commentId: T:BOOSEide.AppEvaluation
+  parent: BOOSEide
+  href: BOOSEide.AppEvaluation.html
+  name: AppEvaluation
+  nameWithType: AppEvaluation
+  fullName: BOOSEide.AppEvaluation
+- uid: BOOSEide.IAppStoredProgram.AddVariable*
+  commentId: Overload:BOOSEide.IAppStoredProgram.AddVariable
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_AddVariable_BOOSEide_AppEvaluation_
+  name: AddVariable
+  nameWithType: IAppStoredProgram.AddVariable
+  fullName: BOOSEide.IAppStoredProgram.AddVariable
+- uid: BOOSEide.IAppStoredProgram.VariableExists*
+  commentId: Overload:BOOSEide.IAppStoredProgram.VariableExists
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_VariableExists_System_String_
+  name: VariableExists
+  nameWithType: IAppStoredProgram.VariableExists
+  fullName: BOOSEide.IAppStoredProgram.VariableExists
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: BOOSEide.IAppStoredProgram.GetVarValue*
+  commentId: Overload:BOOSEide.IAppStoredProgram.GetVarValue
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_GetVarValue_System_String_
+  name: GetVarValue
+  nameWithType: IAppStoredProgram.GetVarValue
+  fullName: BOOSEide.IAppStoredProgram.GetVarValue
+- uid: BOOSEide.IAppStoredProgram.IsExpression*
+  commentId: Overload:BOOSEide.IAppStoredProgram.IsExpression
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_IsExpression_System_String_
+  name: IsExpression
+  nameWithType: IAppStoredProgram.IsExpression
+  fullName: BOOSEide.IAppStoredProgram.IsExpression
+- uid: BOOSEide.IAppStoredProgram.EvaluateExpression*
+  commentId: Overload:BOOSEide.IAppStoredProgram.EvaluateExpression
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_EvaluateExpression_System_String_
+  name: EvaluateExpression
+  nameWithType: IAppStoredProgram.EvaluateExpression
+  fullName: BOOSEide.IAppStoredProgram.EvaluateExpression
+- uid: BOOSEide.AppCommand
+  commentId: T:BOOSEide.AppCommand
+  parent: BOOSEide
+  href: BOOSEide.AppCommand.html
+  name: AppCommand
+  nameWithType: AppCommand
+  fullName: BOOSEide.AppCommand
+- uid: BOOSEide.IAppStoredProgram.Add*
+  commentId: Overload:BOOSEide.IAppStoredProgram.Add
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_Add_BOOSEide_AppCommand_
+  name: Add
+  nameWithType: IAppStoredProgram.Add
+  fullName: BOOSEide.IAppStoredProgram.Add
+- uid: BOOSEide.IAppStoredProgram.ResetProgram*
+  commentId: Overload:BOOSEide.IAppStoredProgram.ResetProgram
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_ResetProgram
+  name: ResetProgram
+  nameWithType: IAppStoredProgram.ResetProgram
+  fullName: BOOSEide.IAppStoredProgram.ResetProgram
+- uid: BOOSEide.IAppStoredProgram.Commandsleft*
+  commentId: Overload:BOOSEide.IAppStoredProgram.Commandsleft
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_Commandsleft
+  name: Commandsleft
+  nameWithType: IAppStoredProgram.Commandsleft
+  fullName: BOOSEide.IAppStoredProgram.Commandsleft
+- uid: BOOSEide.IAppStoredProgram.Run*
+  commentId: Overload:BOOSEide.IAppStoredProgram.Run
+  href: BOOSEide.IAppStoredProgram.html#BOOSEide_IAppStoredProgram_Run
+  name: Run
+  nameWithType: IAppStoredProgram.Run
+  fullName: BOOSEide.IAppStoredProgram.Run

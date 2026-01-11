@@ -1,0 +1,95 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.Tests
+  commentId: N:BOOSEide.Tests
+  id: BOOSEide.Tests
+  children:
+  - BOOSEide.Tests.AppCanvasTests
+  - BOOSEide.Tests.AppElseTests
+  - BOOSEide.Tests.AppForTests
+  - BOOSEide.Tests.AppIfTests
+  - BOOSEide.Tests.AppIntTests
+  - BOOSEide.Tests.AppRealTests
+  - BOOSEide.Tests.AppWhileTests
+  - BOOSEide.Tests.TestCommandFactory
+  langs:
+  - csharp
+  - vb
+  name: BOOSEide.Tests
+  nameWithType: BOOSEide.Tests
+  fullName: BOOSEide.Tests
+  type: Namespace
+  assemblies:
+  - BOOSEide.Tests
+references:
+- uid: BOOSEide.Tests.AppCanvasTests
+  commentId: T:BOOSEide.Tests.AppCanvasTests
+  href: BOOSEide.Tests.AppCanvasTests.html
+  name: AppCanvasTests
+  nameWithType: AppCanvasTests
+  fullName: BOOSEide.Tests.AppCanvasTests
+- uid: BOOSEide.Tests.AppElseTests
+  commentId: T:BOOSEide.Tests.AppElseTests
+  href: BOOSEide.Tests.AppElseTests.html
+  name: AppElseTests
+  nameWithType: AppElseTests
+  fullName: BOOSEide.Tests.AppElseTests
+- uid: BOOSEide.Tests.AppForTests
+  commentId: T:BOOSEide.Tests.AppForTests
+  href: BOOSEide.Tests.AppForTests.html
+  name: AppForTests
+  nameWithType: AppForTests
+  fullName: BOOSEide.Tests.AppForTests
+- uid: BOOSEide.Tests.AppIfTests
+  commentId: T:BOOSEide.Tests.AppIfTests
+  href: BOOSEide.Tests.AppIfTests.html
+  name: AppIfTests
+  nameWithType: AppIfTests
+  fullName: BOOSEide.Tests.AppIfTests
+- uid: BOOSEide.Tests.AppIntTests
+  commentId: T:BOOSEide.Tests.AppIntTests
+  href: BOOSEide.Tests.AppIntTests.html
+  name: AppIntTests
+  nameWithType: AppIntTests
+  fullName: BOOSEide.Tests.AppIntTests
+- uid: BOOSEide.Tests.AppRealTests
+  commentId: T:BOOSEide.Tests.AppRealTests
+  href: BOOSEide.Tests.AppRealTests.html
+  name: AppRealTests
+  nameWithType: AppRealTests
+  fullName: BOOSEide.Tests.AppRealTests
+- uid: BOOSEide.Tests.AppWhileTests
+  commentId: T:BOOSEide.Tests.AppWhileTests
+  href: BOOSEide.Tests.AppWhileTests.html
+  name: AppWhileTests
+  nameWithType: AppWhileTests
+  fullName: BOOSEide.Tests.AppWhileTests
+- uid: BOOSEide.Tests.TestCommandFactory
+  commentId: T:BOOSEide.Tests.TestCommandFactory
+  parent: BOOSEide.Tests
+  href: BOOSEide.Tests.TestCommandFactory.html
+  name: TestCommandFactory
+  nameWithType: TestCommandFactory
+  fullName: BOOSEide.Tests.TestCommandFactory
+- uid: BOOSEide.Tests
+  commentId: N:BOOSEide.Tests
+  href: BOOSEide.html
+  name: BOOSEide.Tests
+  nameWithType: BOOSEide.Tests
+  fullName: BOOSEide.Tests
+  spec.csharp:
+  - uid: BOOSEide
+    name: BOOSEide
+    href: BOOSEide.html
+  - name: .
+  - uid: BOOSEide.Tests
+    name: Tests
+    href: BOOSEide.Tests.html
+  spec.vb:
+  - uid: BOOSEide
+    name: BOOSEide
+    href: BOOSEide.html
+  - name: .
+  - uid: BOOSEide.Tests
+    name: Tests
+    href: BOOSEide.Tests.html

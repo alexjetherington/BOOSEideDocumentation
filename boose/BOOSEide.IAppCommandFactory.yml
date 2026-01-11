@@ -1,0 +1,110 @@
+### YamlMime:ManagedReference
+items:
+- uid: BOOSEide.IAppCommandFactory
+  commentId: T:BOOSEide.IAppCommandFactory
+  id: IAppCommandFactory
+  parent: BOOSEide
+  children:
+  - BOOSEide.IAppCommandFactory.MakeCommand(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IAppCommandFactory
+  nameWithType: IAppCommandFactory
+  fullName: BOOSEide.IAppCommandFactory
+  type: Interface
+  source:
+    remote:
+      path: BOOSEide/IAppCommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: IAppCommandFactory
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommandFactory.cs
+    startLine: 9
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: >-
+    Factory interface for creating application-specific commands.
+
+    All App* commands should be created through a class implementing this interface.
+  example: []
+  syntax:
+    content: public interface IAppCommandFactory
+    content.vb: Public Interface IAppCommandFactory
+- uid: BOOSEide.IAppCommandFactory.MakeCommand(System.String)
+  commentId: M:BOOSEide.IAppCommandFactory.MakeCommand(System.String)
+  id: MakeCommand(System.String)
+  parent: BOOSEide.IAppCommandFactory
+  langs:
+  - csharp
+  - vb
+  name: MakeCommand(string)
+  nameWithType: IAppCommandFactory.MakeCommand(string)
+  fullName: BOOSEide.IAppCommandFactory.MakeCommand(string)
+  type: Method
+  source:
+    remote:
+      path: BOOSEide/IAppCommandFactory.cs
+      branch: main
+      repo: https://github.com/ASE2025repos/ase-boose-assignment-alexjetherington.git
+    id: MakeCommand
+    path: ../repos/ase-boose-assignment-alexjetherington/BOOSEide/IAppCommandFactory.cs
+    startLine: 20
+  assemblies:
+  - BOOSEide
+  namespace: BOOSEide
+  summary: Creates a new instance of a command given its type name.
+  example: []
+  syntax:
+    content: IAppCommand MakeCommand(string commandType)
+    parameters:
+    - id: commandType
+      type: System.String
+      description: The string name of the command to create (e.g., "int", "moveto", "drawto").
+    return:
+      type: BOOSEide.IAppCommand
+      description: A new <xref href="BOOSEide.IAppCommand" data-throw-if-not-resolved="false"></xref> instance corresponding to the specified command type.
+    content.vb: Function MakeCommand(commandType As String) As IAppCommand
+  overload: BOOSEide.IAppCommandFactory.MakeCommand*
+  nameWithType.vb: IAppCommandFactory.MakeCommand(String)
+  fullName.vb: BOOSEide.IAppCommandFactory.MakeCommand(String)
+  name.vb: MakeCommand(String)
+references:
+- uid: BOOSEide
+  commentId: N:BOOSEide
+  href: BOOSEide.html
+  name: BOOSEide
+  nameWithType: BOOSEide
+  fullName: BOOSEide
+- uid: BOOSEide.IAppCommand
+  commentId: T:BOOSEide.IAppCommand
+  parent: BOOSEide
+  href: BOOSEide.IAppCommand.html
+  name: IAppCommand
+  nameWithType: IAppCommand
+  fullName: BOOSEide.IAppCommand
+- uid: BOOSEide.IAppCommandFactory.MakeCommand*
+  commentId: Overload:BOOSEide.IAppCommandFactory.MakeCommand
+  href: BOOSEide.IAppCommandFactory.html#BOOSEide_IAppCommandFactory_MakeCommand_System_String_
+  name: MakeCommand
+  nameWithType: IAppCommandFactory.MakeCommand
+  fullName: BOOSEide.IAppCommandFactory.MakeCommand
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
